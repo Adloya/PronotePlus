@@ -15,4 +15,5 @@ N'est pas affilié à Index Education.
 ## Installation
 Installez l'extension à cette adresse : https://addons.mozilla.org/fr/firefox/addon/pronoteplus/
 ou téléchargez le "code-source.zip" et installez le sur la page about:addons via le bouton "Installer un module depuis un fichier"
+
 ![image](https://user-images.githubusercontent.com/34348778/160373804-d7c74937-2e24-46dd-9a58-50c719684033.png)
