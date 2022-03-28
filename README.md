@@ -19,5 +19,6 @@ ou téléchargez le "code-source.zip" et installez le sur la page about:addons v
 ![image](https://user-images.githubusercontent.com/34348778/160375015-8a48b473-94fc-49d9-94a5-1ba4aa8119aa.png)
 
 
-## License : MIT
+## License : 
+### MIT
 ## Created by Adloya
