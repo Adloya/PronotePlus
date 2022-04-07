@@ -10,8 +10,14 @@
         "js": ["Content.js"]
       }
   ],
+  
   "icons": {
     "48": "assets/img/pronoteplus-256.png"
   },
+
+  "web_accessible_resources": [
+    "css/dark.css",
+    "css/light.css"
+  ],
   "permissions": ["storage", "tabs", "activeTab"]
 }

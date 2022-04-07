@@ -1,102 +1,75 @@
-const schoolName = document.title.slice("0", "-10");
-setTimeout(function() {
-    document.title = schoolName + " - Pronote+";
-    console.log("[Pronote+] : Loaded")
+// DELAY
+setTimeout(() => {
+    // * Part 1 of INIT : CSS Patching
+    let link = document.createElement("link");
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.id = "theme-link";
 
-    // Light Theme
-    function setLightTheme() {
-        // Bandeau TOP
-        document.getElementsByClassName("ObjetBandeauEspace")[0].style.backgroundColor = "white";
-        document.getElementsByClassName("ObjetBandeauEspace")[0].style.color = "black";
-        
-        // 2e Bandeau
-        document.getElementsByClassName("objetBandeauEntete_menu")[0].style.backgroundColor = "#46484d";
-
-        // 3e Bandeau
-        document.getElementsByClassName("objetBandeauEntete_secondmenu")[0].style.backgroundColor = "#d9d9d9";
-        document.getElementsByClassName("objetBandeauEntete_secondmenu")[0].style.color = "black";
-
-        // label-menu_niveau0
-        document.getElementsByClassName("label-menu_niveau0")[0].style.color = "var(--theme-foncee)";
-        document.getElementsByClassName("label-menu_niveau0")[0].style.backgroundColor = "#ececec";
-    }
-
-    // Dark Theme
-    function setDarkTheme() {
-        // Bandeau TOP
-        document.getElementsByClassName("ObjetBandeauEspace")[0].style.backgroundColor = "#050505";
-        document.getElementsByClassName("ObjetBandeauEspace")[0].style.color = "white";
-
-        // 2e Bandeau
-        document.getElementsByClassName("objetBandeauEntete_menu")[0].style.backgroundColor = "#202020";
-
-        // 3e Bandeau
-        document.getElementsByClassName("objetBandeauEntete_secondmenu")[0].style.backgroundColor = "#404040";
-        document.getElementsByClassName("objetBandeauEntete_secondmenu")[0].style.color = "gray";
-
-        // label-menu_niveau0
-        document.getElementsByClassName("label-menu_niveau0")[0].style.color = "var(--theme-foncee)";
-        document.getElementsByClassName("label-menu_niveau0")[0].style.backgroundColor = "#404040";
-    }
-
-    // FORKAWESOME
-    let forkAwesome = document.createElement("link");
-    forkAwesome.rel = "stylesheet";
-    forkAwesome.href = "https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css";
-    // forkAwesome.integrity = "sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=";
-    forkAwesome.crossorigin = "anonymous";
-
-    document.body.appendChild(forkAwesome);
-
-    let separateBtn = document.createElement("hr");
-    separateBtn.className = "objetBandeauEntete_sep_boutons";
-    let themeToggle = document.createElement("i")
-    themeToggle.style.fontSize = "23px";
-    themeToggle.style.cursor = "pointer";
-    themeToggle.innerText = "🌓";
-
-    if(localStorage.theme === "light"){
-        console.log("Light Theme")
-        themeToggle.innerText = "🌚";
-        setLightTheme();
-    }
-    if (localStorage.theme === "dark"){
-        console.log("Dark Theme")
-        themeToggle.innerText = "🌝";
-        setDarkTheme();
-    }
-    if(!localStorage.theme){
-        localStorage.theme = "light"
-        console.log("No theme. Resetting to Light")
-        setLightTheme();
-    }
-
-    themeToggle.title = "Changer de thème (Clair / Sombre)";
-    themeToggle.addEventListener("click", function() {
-        // Toggle Dark and Light Theme
-        if (document.body.classList.contains("theme-dark")) {
-            localStorage.setItem("theme", "light");
-            document.body.classList.remove("theme-dark");
-            document.body.classList.add("theme-light");
-            themeToggle.innerText = "🌚";
-            setLightTheme();
-        } else {
-            localStorage.setItem("theme", "dark");
-            document.body.classList.remove("theme-light");
-            document.body.classList.add("theme-dark");
-            themeToggle.innerText = "🌝";
-            setDarkTheme();
+    /**
+     * Changes the CSS file to the one that matches the theme.
+     * @param theme - The name of the theme to apply.
+     */
+    function patchCSS(theme) {
+        if(theme === "light"){
+            // Light Theme
+            localStorage.setItem("plus-theme", "light")
+            link.href = browser.runtime.getURL("css/light.css")
+        }else if(theme === "dark"){
+            // Dark Theme
+            localStorage.setItem("plus-theme", "dark")
+            link.href = browser.runtime.getURL("css/dark.css")
+        }else{
+            console.log("Une erreur est survenue, le thème clair sera appliqué")
+            patchCSS("light")
         }
-    })
-    separateBtn.appendChild(themeToggle);
+    }
 
-    document.getElementsByClassName("objetBandeauEntete_boutons")[0].appendChild(separateBtn);
-    document.getElementsByClassName("objetBandeauEntete_boutons")[0].appendChild(themeToggle);
-    function patch(){
-        setInterval(function() {
-            // Homepage patch
+    // Retrieves the theme from localStorage
+    if(localStorage.getItem("plus-theme") === null & localStorage.getItem("plus-theme") !== "dark" && localStorage.getItem("plus-theme") !== "light"){
+        // No theme has been set, we set the default one
+        console.log("Pas de thème trouvé ! Le thème clair est appliqué.")
+        patchCSS("light")
+    }else if(localStorage.getItem("plus-theme") === "light"){
+        // Light Theme
+        patchCSS("light")
+    }else if(localStorage.getItem("plus-theme") === "dark"){
+        // Dark Theme
+        patchCSS("dark")
+    }
+
+    document.getElementsByTagName("head")[0].appendChild(link);
+
+    
+    // // FONTAWESOME
+    // let fontawesome = document.createElement("link");
+    // fontawesome.rel = "stylesheet";
+    // fontawesome.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
+    // fontawesome.crossorigin = "anonymous";
+    // document.getElementsByTagName("head")[0].appendChild(fontawesome);
+
+    // Theme switcher
+    let themeSwitcher = document.createElement("a");
+    themeSwitcher.id = "theme-switcher";
+    themeSwitcher.href = "#";
+    themeSwitcher.title = "Changer de thème";
+    themeSwitcher.innerHTML = "<svg id=\"tsSVG\"xmlns=\"http://www.w3.org/2000/svg\" height=\"25\" width=\"25\" viewBox=\"0 0 576 512\"><path style=\"color: #8a8a8a;\" d=\"M342.7 352.7c5.75-9.625 9.25-20.75 9.25-32.75c0-35.25-28.75-64-63.1-64c-17.25 0-32.75 6.875-44.25 17.87C227.4 244.2 196.2 223.1 159.1 223.1c-53 0-96 43.06-96 96.06c0 2 .5029 3.687 .6279 5.687c-37.5 13-64.62 48.38-64.62 90.25C-.0048 468.1 42.99 512 95.99 512h239.1c44.25 0 79.1-35.75 79.1-80C415.1 390.1 383.7 356.2 342.7 352.7zM565.2 298.4c-93 17.75-178.5-53.62-178.5-147.6c0-54.25 28.1-104 76.12-130.9c7.375-4.125 5.375-15.12-2.75-16.63C448.4 1.125 436.7 0 424.1 0c-105.9 0-191.9 85.88-191.9 192c0 8.5 .625 16.75 1.75 25c5.875 4.25 11.62 8.875 16.75 14.25C262.1 226.5 275.2 224 287.1 224c52.88 0 95.1 43.13 95.1 96c0 3.625-.25 7.25-.625 10.75c23.62 10.75 42.37 29.5 53.5 52.5c54.38-3.375 103.7-29.25 137.1-70.37C579.2 306.4 573.5 296.8 565.2 298.4z\"/></svg>";
+    themeSwitcher.addEventListener("click", function(e){
+        e.preventDefault();
+        if(localStorage.getItem("plus-theme") === "light"){
+            patchCSS("dark")
+        }else if(localStorage.getItem("plus-theme") === "dark"){
+            patchCSS("light")
+        }
+    });
+    document.getElementsByClassName("menu-commandes")[0].appendChild(themeSwitcher);
+
+    // * Part 2 of init : Loop page patching.
+    setInterval(function(){
+        function patch(){
+            // Homepage Patching
             if(document.getElementsByClassName('precedenteConnexion').length > 0) {
-                console.info("Homepage Patch");
+                // Note patching
                 document.querySelectorAll('.as-info').forEach((note) => {
                     if(note.style.borderRadius !== "5px") { // Checking if it is already patched
                         note.style.borderRadius = '5px';
@@ -129,92 +102,72 @@ setTimeout(function() {
                             } else if (noteDonnee > 13) {
                                 note.style.backgroundColor = '#55c974'; // Good
                                 note.style.color = 'white';
-                            } else if (noteDonnee < 13 > 10) {
+                            } else if (noteDonnee < 13) {
                                 note.style.backgroundColor = '#ffd061'; // Average
                                 note.style.color = 'white';
                             }
                         }
                     }
-                });
+                });    
             }
 
             // Account patch
             if (document.getElementsByClassName('compte-conteneur').length > 0) {
-                console.info("Account Patch")
+                
             }
 
             // Settings patch
             if (document.getElementsByClassName('icon_mobile_phone').length > 0) {
-                console.info("Settings Patch")
+                
+            }
+
+            // Documents patch
+            if(document.getElementsByClassName("objetBandeauEntete_thirdmenu")[0].children[0].innerText === "Je télécharge mes documents") {
+
             }
 
             // Resources patch
             if (document.getElementsByClassName('conteneur-ressourcePeda').length > 0) {
               if (!document.getElementsByClassName('icon_time').length > 0) {
-                console.info("Resources Patch")
+                
               }
             }
 
             // Homework patch
             if (document.getElementsByClassName('icon_time').length > 0) {
                 if (!document.getElementsByClassName('icon_asterisk').length > 0) {
-                    console.info("Homework Patch")
+                    
                 }
             }
 
             // EDT/Calendar patch
             if (document.getElementsByClassName('Calendrier_Boutons').length > 0) {
-                console.info("EDT/Calendar Patch")
             }
 
             // Messages patch
             if (document.getElementsByClassName('ilm-listeEtiqu-deploiement').length > 0) {
-                console.info("Messages Patch")
             }
 
             // Recap patch
             if (document.getElementsByClassName('icon_time').length > 0) {
                 if(document.getElementsByClassName('icon_asterisk').length > 0) {
-                    console.info("Recap Patch")
+
                 }
             }
 
-            // Notes patch //! Dégeulasse, ne pas utiliser pour le moment
-
+            // Notes patch
             if(document.getElementsByClassName('DonneesListe_DernieresNotes').length > 0) {
-                console.info("Notes Patch")
-                document.querySelectorAll('.Espace').forEach((note) => {
-                    if(document.getElementsByClassName("AlignementHaut")[1].style.borderRadius != "1rem") { // Checking if it is already patched
-                        let matière = "Matière"
-                        let noteDonnee = note.innerHTML.split('>  <')[0].replace('<div style=\"float: right;\">', '').replace('</div', '').replace('  ', '')
-                        if(noteDonnee.includes("AlignementDroit")){
-                            // let noteA = noteDonnee.replace("<div class=\"AlignementDroit\">", "").split("<span class=\"Texte9\">")[0];
-                            // let bareme = noteDonnee.replace("<div class=\"AlignementDroit\">", "").split("<span class=\"Texte9\">")[1];
-                            // note.innerHTML = `${noteA} <span class="bareme">${bareme}</span>`;
-                            // note.style.borderRadius = '5px';
-                            // note.style.backgroundColor = "gray"
-                        }else{
-                            // let type = "Moyenne"
-                            let moyenne = noteDonnee
-                            note.innerHTML = `<matiere>${matière}</matiere><span class="noted">${note.innerHTML.slice(0, -moyenne.length)} ${moyenne}</span>`;
-                            // parentN.style.borderRadius = '5px';
-                            // parentN.style.backgroundColor = "gray"
-                            document.getElementsByClassName("AlignementHaut")[2].style.borderRadius = "1rem";
-                            document.getElementsByClassName("AlignementHaut")[1].style.borderRadius = "1rem";
-                            document.getElementsByClassName("AlignementHaut")[0].style.borderRadius = "1rem";
-                            let C1style = document.createElement("style");
-                            C1style.innerText = ".noted { float: right; } .matiere { float: left; }";
-                            document.head.appendChild(C1style);
-                        }
-                    }
-                });
+
             }
 
             // Comp patch
             if(document.getElementsByClassName('icon_competence_absent').length > 0) {
-                console.info("Comp Patch")
+
             }
-        }, 1000);
-    }
-    patch();
-}, 2000);
+        }
+
+
+        patch()
+    }, 10);
+
+}, 1500)
