@@ -28,4 +28,4 @@ Le code source / le zip pour firefox sont disponibles sur le github
 Ce projet est disponible sous la license [Creative Commons Zero v1.0 Universal](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/license/)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png" width="100"/>
-<img src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" width="100">
+<img src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" width="200">
