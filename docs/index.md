@@ -26,5 +26,3 @@ Le code source / le zip pour firefox sont disponibles sur le github
 
 ### License
 Ce projet est disponible sous la license [Creative Commons Zero v1.0 Universal](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/license/)
-
-## Built by Adloya. 2022
