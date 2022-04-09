@@ -16,7 +16,9 @@ __Pronote+__ est une extension disponible sur firefox (version 49 ou supérieure
 - [x] Notes de la page d'accueil ramenées sur 20
 
 ### Installation
-L'extension est disponible [ici](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/) (n'hésitez pas à laisser un avis!)
+L'extension pour firefox est disponible [ici](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/)
+Elle sera bientôt disponible sur Microsoft Edge & Opera
+(n'hésitez pas à laisser un avis!)
 Le code source / le zip pour firefox sont disponibles sur le github
 
 ### License
