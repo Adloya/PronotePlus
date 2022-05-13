@@ -2,9 +2,13 @@
 setTimeout(() => {
     // * Part 1 of INIT : CSS Patching
     let link = document.createElement("link");
+    let pglink = document.createElement("link");
     link.type = "text/css";
     link.rel = "stylesheet";
     link.id = "theme-link";
+    pglink.type = "text/css";
+    pglink.rel = "stylesheet";
+    pglink.id = "pagetheme-link";
 
     /**
      * Changes the CSS file to the one that matches the theme.
@@ -19,9 +23,27 @@ setTimeout(() => {
             // Dark Theme
             localStorage.setItem("plus-theme", "dark")
             link.href = browser.runtime.getURL("css/dark.css")
-        }else{
-            console.log("Une erreur est survenue, le thème clair sera appliqué")
-            patchCSS("light")
+        }
+    }
+
+    /** 
+     * Links a CSS file to add a custom css to the page.
+     * @param pagename - The name of the page you want to patch
+     */
+    function patchPageCSS(pagename) {
+        if(localStorage.getItem("plus-theme") === null & localStorage.getItem("plus-theme") !== "dark" && localStorage.getItem("plus-theme") !== "light"){
+            // No theme has been set, we set the default one
+            // console.log("Pas de thème trouvé")
+        }else if(localStorage.getItem("plus-theme") === "dark"){
+            if(pagename === "nopage"){
+                pglink.href = "";
+                // console.info("No custom css")
+            }else{
+                pglink.href = browser.runtime.getURL(`css/pages/${pagename}.css`)
+                // console.info(`Custom css found for ${pagename}`)
+            }
+        }else if(localStorage.getItem("plus-theme") === "light"){
+            pglink.href = browser.runtime.getURL("css/light.css")
         }
     }
 
@@ -66,9 +88,32 @@ setTimeout(() => {
 
     // * Part 2 of init : Loop page patching.
     setInterval(function(){
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+               return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+               return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+               return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+               return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+               return false;
+            }
+          }
+        /**
+         * Global patches to pronote
+         */
         function patch(){
             // Homepage Patching
             if(document.getElementsByClassName('precedenteConnexion').length > 0) {
+
+                document.querySelectorAll(`[id*="_date_"]`).forEach((date) => {date.style.color = 'purple';})
+
                 // Note patching
                 document.querySelectorAll('.as-info').forEach((note) => {
                     if(note.style.borderRadius !== "5px") { // Checking if it is already patched
@@ -113,56 +158,98 @@ setTimeout(() => {
 
             // Account patch
             if (document.getElementsByClassName('compte-conteneur').length > 0) {
-                
+                patchPageCSS("nopage")
             }
 
             // Settings patch
             if (document.getElementsByClassName('icon_mobile_phone').length > 0) {
-                
+                patchPageCSS("nopage")
+                if(document.querySelectorAll("#useful-info").length < 1) {
+                    // Adding useful info in the bottom of the settings page
+                    console.log("Patching useful info");
+                    const targetDiv = document.querySelectorAll(".InterfaceParametresUtilisateur")[0].children[0];
+                    const usefulInfo = document.createElement("div");
+                    usefulInfo.id = "useful-info";
+                    usefulInfo.class =".pu_zone";
+                    usefulInfo.innerHTML = `
+                        <div class="WhiteSpaceNormal InlineBlock Gras AlignementHaut" style="color:black; padding: 10px;">
+                            <span class="GrandEspaceDroit CarteCompteZoneGenerique_Title">Informations pratiques</span>
+                        </div>
+                        <div class="InlineBlock" style="color:black; padding: 10px; border-radius: 1rem !important;">
+                            <span>
+                                <strong>Contacter Index Education :</strong>
+                                <br>
+                                - Adresse Postale : Index Éducation CS 90001 13388 Marseille CEDEX 13
+                                <br>
+                                - Télécopie : +33 (0)4 96 15 00 06
+                                <br>
+                                - Téléphone : <a href="tel:"+33496152170">+33 (0)4 96 15 21 70</a> <strong>(Appel non surtaxé)</strong>
+                                <br>
+                                - <a href="https://www.index-education.com/fr/assistance-email.php" target="_BLANK">Contacter par Email</a>
+                            </span>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="InlineBlock" style="color:black; padding: 10px; border-radius: 1rem !important; margin-left: 198px;">
+                        <span>
+                            <strong>Victime de harcèlement ?</strong>
+                            <br>
+                            - Numéro d'écoute confidentiel (harcèlement / cyberharcèlement) : <a href="tel:"3020">30 20</a> <strong>(Service et appel gratuits)</strong>
+                            <br>
+                            - Application d'aide contre le cyberharcèlement : <a href="https://apps.apple.com/us/app/3018/id1602242493" target="_BLANK">IOS</a> | <a href="https://play.google.com/store/apps/details?id=org.eenfance.android.app3018" target="_BLANK">ANDROID</a>
+                            <br>
+                            - En cas d'envies suicidaires (SOS Amitié) : <a href="tel:"0972394050">09 72 39 40 50</a> <strong>(Prix d'un appel local)</strong>
+                        </span>
+                    </div>
+                    `;
+                    targetDiv.appendChild(usefulInfo);
+                }
             }
 
             // Documents patch
             if(document.getElementsByClassName("objetBandeauEntete_thirdmenu")[0].children[0].innerText === "Je télécharge mes documents") {
-
+                patchPageCSS("nopage")
             }
 
             // Resources patch
             if (document.getElementsByClassName('conteneur-ressourcePeda').length > 0) {
               if (!document.getElementsByClassName('icon_time').length > 0) {
-                
+                patchPageCSS("nopage")
               }
             }
 
             // Homework patch
             if (document.getElementsByClassName('icon_time').length > 0) {
                 if (!document.getElementsByClassName('icon_asterisk').length > 0) {
-                    
+                    patchPageCSS("nopage")
                 }
             }
 
             // EDT/Calendar patch
             if (document.getElementsByClassName('Calendrier_Boutons').length > 0) {
+                patchPageCSS("nopage")
             }
 
             // Messages patch
             if (document.getElementsByClassName('ilm-listeEtiqu-deploiement').length > 0) {
+                patchPageCSS("nopage")
             }
 
             // Recap patch
             if (document.getElementsByClassName('icon_time').length > 0) {
                 if(document.getElementsByClassName('icon_asterisk').length > 0) {
-
+                    patchPageCSS("nopage")
                 }
             }
 
             // Notes patch
             if(document.getElementsByClassName('DonneesListe_DernieresNotes').length > 0) {
-
+                patchPageCSS("nopage")
             }
 
             // Comp patch
             if(document.getElementsByClassName('icon_competence_absent').length > 0) {
-
+                patchPageCSS("nopage")
             }
         }
 

@@ -645,3 +645,27 @@ html, body {
   .SansMain .liste_fixed {
     background-color: #444 !important;
   }
+
+  .DivBloc .ArrondisBloc .z-depth-1 .MargeGaucheBloc, .ObjetTimeline_column {
+    background-color: #444 !important;
+    padding: 0 !important;
+  }
+
+  .listeHeures {
+    background-color: #444 !important;
+  }
+
+  aside {
+    background-color: #444 !important;
+  }
+
+  .liste_contenu_cellule_contenu {
+    background-color: #444 !important;
+  }
+
+  .ibe_image_etab img {
+    border-radius: 8px;
+    border: 0px !important;
+    margin-left: 5px;
+    width: 70px;
+  }
