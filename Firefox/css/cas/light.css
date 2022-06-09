@@ -1,0 +1,20 @@
+#theme-switcher {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(172, 172, 172);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #222;
+    text-decoration: none;
+    color: white;
+}
+
+header, footer {
+    background-color: #f5f5f5 !important;
+}
+
+header > .navbar {
+    background-color: #f5f5f5 !important;
+    color: black;
+}

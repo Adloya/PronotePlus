@@ -1,0 +1,101 @@
+* {
+    color: white;
+}
+
+.fr-header__body, .fr-footer {
+    background-color: #2b2a33;
+    color: white !important;
+}
+
+.fr-header__service, .fr-logo, .no-before, .fr-logo, .fr-header__service-tagline, .fr-header__service-title {
+    color: white !important;
+}
+
+.fr-header__logo .fr-logo {
+    font-weight: bold; color: white;}
+    .fr-header__logo .fr-logo::after {
+      padding-top: 1.875rem; color: white;}
+  
+
+
+
+#theme-switcher {
+    bottom: 0;
+    position: absolute;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+
+.fr-footer__content-link {
+    color: white !important;
+}
+
+.fr-footer__content-item a[target="_blank"]::after {
+    color: rgb(148, 148, 148) !important;
+}
+
+.fr-container .height-auto {
+    background-color: #42414d;
+}
+
+.fr-container#contenu {
+    background-color: #42414d;
+}
+
+body {
+    background-color: #42414d;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+    color: white !important;
+}
+
+p, li {
+    color: white !important;
+}
+
+.sidebar, .choixProfil__btn {
+    background-color: #1c1b22;
+}
+
+.choixProfil__btn:hover {
+    background-color: #2b2a33;
+}
+
+.fr-header__logo .fr-logo::after {
+    color: white !important;
+}
+
+.fr-callout .error, #texteErreur {
+    background-color: #2b2a33;
+}
+
+.fr-card__body {
+    background-color: #1c1b22;
+}
+
+.fr-input {
+    background-color: #2b2a33 !important;
+}
+
+.fr-link {
+    color: #2222ca !important;
+}
+
+.bf500 {
+    color: #2222ca !important;
+}
+
+.showPwd {
+    background-color: transparent !important;
+}
+
+input {
+    background-color: #2b2a33 !important;
+    color: white !important;
+}

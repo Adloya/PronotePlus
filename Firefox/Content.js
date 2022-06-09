@@ -74,6 +74,8 @@ setTimeout(() => {
             patchCSS("dark")
         }else if(localStorage.getItem("plus-theme") === "dark"){
             patchCSS("light")
+        }else{
+            patchCSS("light")
         }
     });
     document.getElementsByClassName("menu-commandes")[0].appendChild(themeSwitcher);
@@ -163,7 +165,7 @@ setTimeout(() => {
                     const usefulInfo = document.createElement("div");
                     usefulInfo.id = "useful-info";
                     usefulInfo.class =".pu_zone";
-                    usefulInfo.innerHTML = `
+                    usefulInfo.innerHTML = /*html*/`
                         <div class="WhiteSpaceNormal InlineBlock Gras AlignementHaut" style="color:black; padding: 10px;">
                             <span class="GrandEspaceDroit CarteCompteZoneGenerique_Title">Informations pratiques</span>
                         </div>
@@ -272,59 +274,6 @@ setTimeout(() => {
                     }
                     moyennes[i].children[1].classList.add("MNAME")
                 }
-                // let moyenneg = parseFloat(document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].innerText);
-                
-                // if(moyenneg < 10){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.backgroundColor = "#ff6161"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.padding = "2px"
-
-                // }
-                // if(moyenneg > 10 && moyenneg < 14 || moyenneg === 14 || moyenneg === 10){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.backgroundColor = "#ffd061"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.padding = "2px"
-
-                // }
-                // if(moyenneg > 14 && moyenneg < 15 || moyenneg === 15){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.backgroundColor = "#55c974"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.padding = "2px"
-
-                // }
-                // if(moyenneg > 15 && moyenneg < 20 || moyenneg === 20){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.backgroundColor = "#28ad37"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[0].children[0].style.padding = "2px"
-
-                // }
-
-                // let moyennec = parseFloat(document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].innerText);
-                
-                // if(moyennec < 10){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.backgroundColor = "#ff6161"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.padding = "2px"
-
-                // }
-                // if(moyennec > 10 && moyennec < 14 || moyennec === 14 || moyennec === 10){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.backgroundColor = "#ffd061"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.padding = "2px"
-
-                // }
-                // if(moyennec > 14 && moyennec < 15 || moyennec === 15){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.backgroundColor = "#55c974"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.padding = "2px"
-
-                // }
-                // if(moyennec > 15 && moyennec < 20 || moyennec === 20){
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.backgroundColor = "#28ad37"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.borderRadius = "5px"
-                //     document.getElementsByClassName("Gras InlineBlock PetitEspaceHaut PetitEspaceBas EspaceDroit EspaceGauche10")[1].children[0].style.padding = "2px"
-
-                // }
             }
 
             // Comp patch
