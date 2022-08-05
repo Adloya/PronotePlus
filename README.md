@@ -14,7 +14,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/Adloya/PronotePlus/total) ![Contributors](https://img.shields.io/github/contributors/Adloya/PronotePlus?color=dark-green) ![Issues](https://img.shields.io/github/issues/Adloya/PronotePlus) ![License](https://img.shields.io/github/license/Adloya/PronotePlus) 
 
-## A propos
+## A propos -- About the project
 
 Améliorez Pronote en utilisant l'extension Pronote+ !
 
@@ -36,18 +36,18 @@ Pronote+ adds the following features :
  - And many more features !
 
 
-## Roadmap
+## Liste des Issues -- Roadmap
 
 See the [open issues](https://github.com/Adloya/PronotePlus/issues) for a list of proposed features (and known issues).
 
-## Contributing
+## Contribuer -- Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 * If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Adloya/PronotePlus/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
 
-### Creating A Pull Request
+### Créer un Pull Request -- Creating A Pull Request
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -59,7 +59,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the Hippocratic License. See [LICENSE](https://github.com/Adloya/PronotePlus/blob/main/LICENSE.md) for more information.
 
-## Authors
+## Auteur -- Author
 
 * **Adloya** - *Fullstack Developer* - [Shaan Khan](https://github.com/Adloya/) - *Built Pronote+*
 
