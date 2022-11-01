@@ -61,7 +61,7 @@ Distributed under the Hippocratic License. See [LICENSE](https://github.com/Adlo
 
 ## Auteur -- Author
 
-* **Adloya** - *Fullstack Developer* - [Shaan Khan](https://github.com/Adloya/) - *Built Pronote+*
+* **Adloya** - *Fullstack Developer* - [Adloya](https://github.com/Adloya/) - *Built Pronote+*
 
 #### Pronote+ n'est pas opéré, toléré, soutenu ou affilié à Index Education
 #### Pronote+ isn't operated, tolerated, supported or affiliated to Index Education
