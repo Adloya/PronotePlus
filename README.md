@@ -16,7 +16,7 @@
 
 ## A propos
 
-Améliorez Pronote en utilisant [l'extension Pronote+](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/) !
+Améliorez Pronote en utilisant l'extension Pronote+ !
 
 Pronote+ rajoute :
 
@@ -24,8 +24,6 @@ Pronote+ rajoute :
  - La colorimétrie des notes
  - Des informations supplémentaires
  - Et bien + encore !
-
-Disponible uniquement sur [Firefox](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/) pour le moment
 
 ## Liste des Issues
 

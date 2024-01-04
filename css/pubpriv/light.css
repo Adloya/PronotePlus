@@ -1,0 +1,15 @@
+.fr-header__body {
+    background-color: white;
+}
+
+#theme-switcher {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(172, 172, 172);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #222;
+    text-decoration: none;
+    color: white;
+}

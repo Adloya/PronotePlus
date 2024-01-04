@@ -1,0 +1,61 @@
+#theme-switcher {
+    bottom: 0;
+    position: absolute;
+    background-color: #21242D;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #222;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #2b2a33;
+}
+
+html {
+    background-color: #2b2a33;
+}
+
+.box {
+    border: 4px solid #2b2a33;
+    border-radius: 20px;
+    background-color: #1c1b22;
+}
+
+h1 img {
+    border-radius: 5px;
+}
+
+.selected {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.selector-step1 {
+    background-color: #1c1b22;
+}
+
+.box #title {
+    background-color: #42414d;
+}
+
+h1 img {
+    background-color: #42414d;
+}
+
+#e_title, #ep_title, #pne_title, #guest_title {
+    color: #FFF;
+    font-weight: bold;
+}
+
+#ep, #ep1, #ep2, #ep3, #e, #e1, #e2, #e3, #pne, #pne1, #pne2, #pne3, #g, #g1, #g2, #g3 {
+    color: rgb(192, 190, 190);
+    text-decoration: none;
+}
+
+#ep:hover, #ep1:hover, #ep2:hover, #ep3:hover, #e:hover, #e1:hover, #e2:hover, #e3:hover, #pne:hover, #pne1:hover, #pne2:hover, #pne3:hover, #guest:hover, #guest1:hover, #guest2:hover, #guest3:hover {
+    color: rgb(192, 190, 190);
+    text-decoration: none;
+}
