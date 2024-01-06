@@ -269,6 +269,12 @@ setTimeout(() => {
       // EDT/Calendar patch
       if (document.getElementsByClassName("Calendrier_Boutons").length > 0) {
         patchPageCSS("nopage");
+
+        let pasts = document.getElementsByClassName("PastilleRessource");
+
+        for (let i = 0; i < pasts.length; i++) {
+          pasts[i].style = "" 
+        }
       }
 
       // Messages patch

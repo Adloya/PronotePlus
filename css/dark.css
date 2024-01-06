@@ -1134,3 +1134,23 @@ html, body {
   .total-content, .liste-totale-fd.liste-footer {
     background-color: var(--7gray) !important;
   }
+
+  .ObjetCalendrier .calendrier-jour {
+    color: black !important;
+  }
+
+  .PastilleRessource {
+    color: var(--8gray) !important;
+  }
+
+  .icon_remove {
+    color: white !important;
+  }
+
+  .EtiquetteCours > div {
+    color: red !important;
+  }
+
+  .zoneConsult_scroll, .titre-info-sondage {
+    color: white !important;
+  }
