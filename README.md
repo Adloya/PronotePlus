@@ -51,5 +51,6 @@ Distributed under the Hippocratic License. See [LICENSE](https://github.com/Adlo
 ## Auteur
 
 * **Adloya** - [Adloya](https://github.com/Adloya/) - *Built Pronote+*
+* **MalolamGo** - [MalolamGo](https://github.com/Malolamgo/) - *Built Pronote+*
 
 #### Pronote+ n'est pas opéré, soutenu ou affilié à Index Education
