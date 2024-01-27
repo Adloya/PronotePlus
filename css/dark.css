@@ -59,36 +59,6 @@ html, body {
   .widget .content-container > div[id^=id_] h4 {
     color: var(--lightgray);
   }
-  .widget .content-container > div[id^=id_] .liste-nested h5, .widget .content-container > div[id^=id_] .liste-groups h5, .widget .content-container > div[id^=id_] .liste-ressources h5 {
-    color: #eee;
-  }
-  .widget.travailafaire h3.clickable, .widget.travailafaire h3 > a:hover, .widget.travailafaire h3 > span.AvecMain, .widget.ressourcepedagogique h3.clickable, .widget.ressourcepedagogique h3 > a, .widget.ressourcepedagogique h3 > span.AvecMain, .widget.kiosque h3 {
-    color: #a478d4;
-  }
-  .widget.travailafaire h3.clickable:hover, .widget.travailafaire h3 > a:hover, .widget.travailafaire h3 > span.AvecMain:hover, .widget.ressourcepedagogique h3.clickable:hover, .widget.ressourcepedagogique h3 > a:hover, .widget.ressourcepedagogique h3 > span.AvecMain:hover {
-    color: #4a1b7f;
-  }
-  .widget.viescolaire h3.clickable, .widget.viescolaire h3 > a, .widget.viescolaire h3 > span.AvecMain {
-    color: #439bd6;
-  }
-  .widget.viescolaire h3.clickable:hover, .widget.viescolaire h3 > a:hover, .widget.viescolaire h3 > span.AvecMain:hover {
-    color: #005f9e;
-  }
-  .widget.notes h3.clickable, .widget.notes h3 > a, .widget.notes h3 > span.AvecMain {
-    color: #f9a62c;
-  }
-  .widget.notes h3.clickable:hover, .widget.notes h3 > a:hover, .widget.notes h3 > span.AvecMain:hover {
-    color: #a55800;
-  }
-  .widget.lienutile h3, .widget.agenda h3.clickable, .widget.agenda h3 > a, .widget.agenda h3 > span.AvecMain, .widget.actualites h3.clickable, .widget.actualites h3 > a, .widget.actualites h3 > span.AvecMain, .widget.discussions h3.clickable, .widget.discussions h3 > a, .widget.discussions h3 > span.AvecMain {
-    color: #66b783;
-  }
-  .widget.agenda h3.clickable:hover, .widget.agenda h3 > a:hover, .widget.agenda h3 > span.AvecMain:hover, .widget.actualites h3.clickable:hover, .widget.actualites h3 > a:hover, .widget.actualites h3 > span.AvecMain:hover, .widget.discussions h3.clickable:hover, .widget.discussions h3 > a:hover, .widget.discussions h3 > span.AvecMain:hover {
-    color: #007c4b;
-  }
-  .kiosque .content-container > div[id^="id_"] ul > li .link-as-wrapper span {
-    color: #eee;
-  }
   .objetbandeauentete_global .objetBandeauEntete_menu:not(.ongletLudique), .ObjetBandeauPied, .objetbandeauentete_global .objetBandeauEntete_thirdmenu, .ObjetBandeauPied .knowledge-container .ibp-pill {
     background-color: var(--5gray) !important;
   }
@@ -97,7 +67,7 @@ html, body {
     color: var(--lightgray);
   }
   .submenu-wrapper, .ObjetMenuContexutel {
-    background: var(--6gray) !important;
+    background: var(--8gray) !important;
   }
   .item-menu_niveau1:hover, .item-menu_niveau2:hover, .ObjetMenuContexutel tr:hover {
     background: var(--1gray) a46 !important;
@@ -915,56 +885,22 @@ html, body {
     border: none !important;
   }
 
-  .widget.ressourcepedagogique.ThemeCat-pedagogie .content-container > div[id^="id_"] li {
+  .widget.ressourcepedagogique.ThemeCat-pedagogie .content-container > div[id^="id_"] li, .widget.viescolaire.ThemeCat-viescolaire .content-container > div[id^="id_"] li,
+  .widget.notes.ThemeCat-resultat .content-container > div[id^="id_"] li, .widget.competences.ThemeCat-resultat .content-container > div[id^="id_"] li,
+  .widget.menudelacantine.ThemeCat-communication .content-container > div[id^="id_"] li, .widget.agenda.ThemeCat-communication .content-container > div[id^="id_"] li,
+  .widget.lienutile.ThemeCat-communication .content-container > div[id^="id_"] li {
     border-top: solid 0.1rem var(--6gray) !important
   }
 
-  .widget.ressourcepedagogique.ThemeCat-pedagogie .content-container > div[id^="id_"] li:first-child {
-    border: none !important;
-  }
-
-  .widget.notes.ThemeCat-resultat .content-container > div[id^="id_"] li {
-    border-top: solid 0.1rem var(--6gray) !important
-  }
-
-  .widget.notes.ThemeCat-resultat .content-container > div[id^="id_"] li:first-child {
-    border: none !important;
-  }
-
-  .widget.competences.ThemeCat-resultat .content-container > div[id^="id_"] li {
-    border-top: solid 0.1rem var(--6gray) !important
-  }
-
-  .widget.competences.ThemeCat-resultat .content-container > div[id^="id_"] li:first-child {
+  .widget.ressourcepedagogique.ThemeCat-pedagogie .content-container > div[id^="id_"] li:first-child, .widget.viescolaire.ThemeCat-viescolaire .content-container > div[id^="id_"] li:first-child,
+  .widget.notes.ThemeCat-resultat .content-container > div[id^="id_"] li:first-child, .widget.competences.ThemeCat-resultat .content-container > div[id^="id_"] li:first-child,
+  .widget.menudelacantine.ThemeCat-communication .content-container > div[id^="id_"] li:first-child, .widget.lienutile.ThemeCat-communication .content-container > div[id^="id_"] li:first-child,
+  .widget.agenda.ThemeCat-communication .content-container > div[id^="id_"] li:first-child {
     border: none !important;
   }
 
   .widget header h3.clickable:hover, .widget header h3 > a:hover, .widget header h3 > span.AvecMain:hover {
     color: #f9a62c !important;
-  }
-
-  .widget.menudelacantine.ThemeCat-communication .content-container > div[id^="id_"] li {
-    border-top: solid 0.1rem var(--6gray) !important;
-  }
-
-  .widget.menudelacantine.ThemeCat-communication .content-container > div[id^="id_"] li:first-child {
-    border: none !important;
-  }
-
-  .widget.lienutile.ThemeCat-communication .content-container > div[id^="id_"] li {
-    border-top: solid 0.1rem var(--6gray) !important;
-  }
-
-  .widget.lienutile.ThemeCat-communication .content-container > div[id^="id_"] li:first-child {
-    border: none !important;
-  }
-
-  .widget.agenda.ThemeCat-communication .content-container > div[id^="id_"] li {
-    border-top: solid 0.1rem var(--6gray) !important;
-  }
-
-  .widget.agenda.ThemeCat-communication .content-container > div[id^="id_"] li:first-child {
-    border: none !important;
   }
 
   .date {
@@ -1114,7 +1050,8 @@ html, body {
 
   .Texte10 .Gras, .libelle, .ie-titre-gros, .InterfaceSelectionDate .titre-jours td.ouvre, .InterfaceSelectionDate .jours td.actif, .ie-titre, .widget.travailafaire.theme-cat-pedagogie
   .content-container > div[id^="id_"] .as-cta:hover, .sous-titre, .visu-post, .ie-texte, h3, h4, .detail-titre, .Texte9, .Texte10, #IE.Identite.collection.g12_Titre, #IE.Identite.collection.g13_Titre,
-  #id_143, .Fenetre_Contenu, #id_166, #GInterface\.Instances\[2\]\.Instances\[1\]_grid_0, .ie-ellipsis, .ieBoutonIcon, .small-bt:hover, .small-bt, #GInterface\.Instances\[2\]\.Instances\[1\], .widget .as-footer .btn-collapse span {
+  #id_143, .Fenetre_Contenu, #id_166, #GInterface\.Instances\[2\]\.Instances\[1\]_grid_0, .ie-ellipsis, .ieBoutonIcon, .small-bt:hover, .small-bt, #GInterface\.Instances\[2\]\.Instances\[1\], .widget .as-footer .btn-collapse span,
+  .fiche-etablissement, .icon_remove, .zoneConsult_scroll, .titre-info-sondage, .as-li .c_1 .ie-ellipsis .selected, .as-li .c_1 .ie-ellipsis {
     color: white !important;
   }
 
@@ -1143,14 +1080,37 @@ html, body {
     color: var(--8gray) !important;
   }
 
-  .icon_remove {
-    color: white !important;
+  .widget.edt .liste-cours > li.cours-annule, .edtJournalier .liste-cours > li.cours-annule {
+    background-color: transparent !important;
+  }
+
+  .ObjetListe.skin_flatDesign .fd_ligne .zone-complementaire time, .ObjetListe.skin_flatDesign .fd_ligne .zone-complementaire .compteur, .ObjetListe.skin_flatDesign .fd_ligne .zone-complementaire .btn-conteneur {
+    color: var(--9lgray) !important;
+  }
+
+  .real-scroll {
+    background-color: var(--3gray) !important;
   }
 
   .EtiquetteCours > div {
     color: red !important;
   }
 
-  .zoneConsult_scroll, .titre-info-sondage {
+  .InterfacePageMenus .header {
+    background-color: var(--5gray) !important;
+  }
+
+  .ObjetListe .liste_btnsDroite > div {
+    background-color: transparent !important;
+  }
+
+  .like-input:not(:disabled), .round-style ~ div.tox.tox-tinymce:not(:disabled), textarea.round-style:not(:disabled):not(.browser-default), input.round-style:not(:disabled):not(.browser-default) {
+    background-color: unset !important;
     color: white !important;
+  }
+
+  i.btnImage:not([class*="Image_"]).btnImageDisable.avecFond, i.btnImage:not([class*="Image_"]).btnImageDisable.bt-activable {
+    background-color: unset !important;
+    border: none;
+    
   }

@@ -25,8 +25,6 @@ Pronote+ rajoute :
  - Des informations supplémentaires
  - Et bien + encore !
 
-Extension disponible uniquement sur [Firefox](https://addons.mozilla.org/fr/firefox/addon/pronoteplus/) pour le moment, arrive sur les navigateurs Chromium
-
 ## Liste des Issues
 
 Voir [les issues](https://github.com/Adloya/PronotePlus/issues) pour avoir une liste détaillées des issues de l'extension et pour en ouvrir.

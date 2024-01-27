@@ -100,23 +100,6 @@ setTimeout(() => {
 
   // * Part 2 of init : Loop page patching.
   setInterval(function () {
-    document.onkeydown = function (e) {
-      if (event.keyCode == 123) {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-        return false;
-      }
-      if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-        return false;
-      }
-    };
     /**
      * Global patches to pronote
      */
@@ -137,6 +120,8 @@ setTimeout(() => {
               const noteDonnee = parseFloat(note.innerText.split("/")[0], 10);
               const bareme = parseFloat(note.innerText.split("/")[1], 10);
               const convertedNote = (noteDonnee / bareme) * 20;
+
+              console.log(convertedNote)
               if (convertedNote < 10) {
                 note.style.color = "#ff6161";
               } else if (convertedNote >= 15) {
@@ -271,6 +256,19 @@ setTimeout(() => {
         patchPageCSS("nopage");
 
         let pasts = document.getElementsByClassName("PastilleRessource");
+        // let etiq = document.getElementsByClassName("EtiquetteCours");
+
+        // for (let i = 0; i < etiq.length; i++) {
+        //   if(!etiq.length === 0) {
+        //     let e = etiq[i].style
+        //     console.log(e)
+        //     if(toString(etiq[i].style).includes("blue")) {
+        //       etiq[i].style = "color: blue !important;"
+        //     }else if(toString(etiq[i].style).includes("rgb(192, 0, 0)")) {
+        //       etiq[i].style.color = "color: rgb(192, 0, 0) !important;"
+        //     }
+        //   }
+        // }
 
         for (let i = 0; i < pasts.length; i++) {
           pasts[i].style = "" 
@@ -297,24 +295,7 @@ setTimeout(() => {
         0
       ) {
         patchPageCSS("nopage");
-        let moyennes = document.getElementsByClassName("Gras Espace");
-        for (let i = 1; i < moyennes.length; i++) {
-          let moyenne = parseFloat(moyennes[i].children[0].innerText);
-          moyennes[i].children[0].classList.add("moyenne");
-          if (moyenne < 10) {
-            moyennes[i].children[0].classList.add("M10");
-          }
-          if ((moyenne > 10 && moyenne < 13) || moyenne === 13) {
-            moyennes[i].children[0].classList.add("M13");
-          }
-          if ((moyenne > 13 && moyenne < 16) || moyenne === 16) {
-            moyennes[i].children[0].classList.add("M16");
-          }
-          if ((moyenne > 16 && moyenne < 20) || moyenne === 20) {
-            moyennes[i].children[0].classList.add("M20");
-          }
-          moyennes[i].children[1].classList.add("MNAME");
-        }
+        
       }
 
       // Comp patch
