@@ -1,0 +1,1332 @@
+:root {
+  --lightgray: #ddd;
+  --1gray: #1B1D24;
+  --2gray: #21242D;
+  --3gray: #232831;
+  --4gray: #2b313b;
+  --5gray: #343B48;
+  --6gray: #404040;
+  --7gray: #373f4d;
+  --8gray: #3E4757;
+  --9lgray: #6e7e99;
+  --ts: #00985a !important;
+  --abyss: #000c18;
+  --1blue: #051336;
+  --2blue: #2b3c5d;
+  --3blue: #0063a5;
+  --4blue: #10192c;
+  --5blue: #1f2e4b;
+  --6blue: #2f497c;
+  --7blue: #172238;
+
+}
+
+a {
+  color: var(--ts) !important;
+}
+
+#theme-switcher {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+html, body {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  .tag-style.ie-chips.OmbreFocus {
+    visibility: hidden;
+  }
+
+  .iconic.icon_uniF1C1.ie-chips.OmbreFocus.AvecMenuContextuel.avec-event {
+    color: purple;
+  }
+
+  .conteneur-droite.EspaceGauche.conteneur-liste-CDT{
+      background-color: var(--1gray) !important;
+  }
+  .interface_affV {
+    background: inherit !important;
+  }
+  .ObjetBandeauEspace {
+    background: var(--1blue) !important;
+    color: var(--lightgray);
+  }
+  .dotty {
+    background-color: var(--abyss) !important;
+    background-image: radial-gradient(circle, var(--2blue) 5%, transparent 10%), radial-gradient(circle, var(--2blue) 5%, transparent 10%) !important;
+  }
+  .widget {
+    background-color: var(--1blue)!important;
+    color: var(--lightgray) !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .widget li a {
+    color: var(--lightgray) !important;
+  }
+  .widget .content-container > div[id^=id_] h4 {
+    color: var(--lightgray);
+  }
+  .objetbandeauentete_global .objetBandeauEntete_menu:not(.ongletLudique), .ObjetBandeauPied, .objetbandeauentete_global .objetBandeauEntete_thirdmenu, .ObjetBandeauPied .knowledge-container .ibp-pill {
+    background-color: var(--2blue) !important;
+  }
+  .EspaceIndex input:not([type]).style-input, .EspaceIndex input[type="text"].style-input, .EspaceIndex input[type="email"].style-input, .EspaceIndex input[type="password"].style-input, .input-wrapper input, .as-input {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  .submenu-wrapper, .ObjetMenuContexutel {
+    background: var(--5blue) !important;
+  }
+  .item-menu_niveau1:hover, .item-menu_niveau2:hover, .ObjetMenuContexutel tr:hover {
+    background: var(--1gray) a46 !important;
+  }
+  .item-menu_niveau2, .ObjetMenuContexutel tr, .item-menu_niveau1, .item-menu_niveau0:hover, .item-menu_niveau0.focused-in, .item-menu_niveau0.item-selected {
+    color: var(--lightgray) !important;
+    background: var(--2blue) !important;
+  }
+  .ObjetMenuContexutel {
+    background: var(--4gray) !important;
+  }
+  .objetBandeauEntete_secondmenu .menu-principal_niveau1 .item-menu_niveau1.selected{
+    color: var(--lightgray) !important;
+    background: var(--5blue) a46 !important;
+  }
+  .UtilitaireBloc_containerInverse {
+    background: var(--2gray) !important;
+  }
+  .DAT_DocumentCadre {
+    background-color: var(--2gray);
+  }
+  div.objetBandeauEntete_secondmenu {
+    background-color: var(--5blue);
+  }
+  div.objetBandeauEntete_secondmenu > div:first-child > ul li.selected {
+    background-color: var(--5blue);
+  }
+  li.objetmenuprincipalCombo.objetmenuprincipalCombo.objetmenuprincipalComboSelect {
+    background: var(--3gray);
+    color: var(--lightgray);
+  }
+  li.objetmenuprincipalCombo:hover, li.objetmenuprincipalCombo.objetmenuprincipal_focusedin {
+    background: #999;
+    color: var(--lightgray);
+  }
+  div.objetmenuprincipal_niveau0 ul {
+    background: #777;
+    color: var(--lightgray);
+  }
+  div.objetBandeauEntete_secondmenu > div:first-child > ul > li {
+    color: var(--lightgray);
+  }
+  #GInterface_T {
+    background: var(--1gray) ;
+  }
+  .TitreSectionAccueil {
+    border-bottom: 1px solid #6B6E77;
+    height:27px;
+    width:100%;
+    background-color: var(--3gray);
+    color:#bbb;
+  }
+
+  .widget.ressourcepedagogique.theme-cat-pedagogie .content-container .no-events p, .widget.travailafaire.theme-cat-pedagogie h3.clickable, .widget.travailafaire.theme-cat-pedagogie .content-container .no-events p, .widget.ressourcepedagogique.theme-cat-pedagogie h3.clickable {
+    color: #8448bf;
+  }
+
+  .Gris {
+    color: var(--8gray) !important;
+  }
+
+  .ObjetCompte .details-contain, .EspaceIndex .InterfaceForumPedagogique, .InterfaceFicheStage, .conteneur-PageFicheStage, .conteneur-listeOnglet {
+    background-color: #172238 !important;
+  }
+
+  .EspaceIndex .InterfaceForumPedagogique > .liste-sujets, .EspaceIndex .ObjetCompte .menu-contain {
+    background-color: var(--5blue) !important;
+  }
+
+  input.round-style:disabled {
+    background-color: var(--2blue);
+  }
+
+  *:not(.AvecMenuContextuel) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  input:disabled {
+    color: var(--8gray) !important;
+  }
+
+  .CarteCompteZoneGenerique {
+    background: var(--2gray);
+  }
+  .InlineBlock:not(.AlignementMilieuVertical, .AlignementHaut, .EspaceGauche, .EspaceDroit, .icon-home) {
+    color: var(--lightgray);
+    background-color: var(--5blue);
+  }
+  .Tableau, .WidgetLigneImpaire {
+    background: var(--2gray);
+    color: var(--lightgray);
+  }
+  .FondBlanc {
+    background: var(--2blue);
+  }
+  .WidgetLignePaire {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  .WidgetCumul {
+    background: var(--1gray) ;
+    border: none;
+    color: var(--lightgray);
+  }
+  .ie-ellipsis:not(.NoWrap) {
+    background: none;
+    color: var(--lightgray);
+  }
+  div.AlignementHaut[role="tree"] {
+    background-color: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  .AlignementDroit.PetitEspaceDroit {
+    color: var(--lightgray) !important;
+  }
+  .ObjetGrille .conteneurAbs canvas {
+    background-color: var(--7gray);
+  }
+  div.objetBandeauEntete_thirdmenu {
+    background-color: #222;
+  }
+  div.AlignementMilieu.Gras.EspaceHaut {
+    color: var(--lightgray);
+  }
+  button.ieBouton.Texte10.OmbreFocus.NoWrap.ieBoutonDefautSansImage {
+    background-color: var(--7gray);
+  }
+  .PetitEspace.Italique {
+    color: var(--lightgray);
+  }
+  div.DivBloc.BlocPastille.z-depth-3.ArrondisBloc {
+    background-color: var(--7gray);
+  }
+  div.DivBloc.BlocPastille.z-depth-3.ArrondisBloc > * {
+    background-color: var(--7gray);
+  }
+  .UtilitaireBloc_itemInverse > div:not(.celluleMarqueur) {
+    width: calc(100% - 6px);
+    background-color: var(--2blue) !important;
+    color: var(--lightgray) !important;
+  }
+  .Bloc_Contenu.UtilitaireBloc_itemNormal > div > div {
+    background-color: var(--7gray) !important;
+    color: inherit !important;
+  }
+  .Bloc_Contenu.UtilitaireBloc_itemNormal > div > div > div > div {
+    background-color: var(--7gray) !important;
+  }
+  div.UtilitaireBloc_itemInverse.Bloc_InfoCompl.AlignementDroit.AlignementHaut.EspaceHaut {
+    background-color: var(--7gray) !important;
+  }
+  div.EspaceGauche.EspaceDroit.InlineBlock.AlignementMilieuVertical.PourFenetreBloc_Contenu {
+    background-color: var(--7gray);
+  }
+  .ObjetBoutonBandeau_iconeInactive::before {
+    color: #2f333f;
+  }
+  i.ObjetBoutonBandeau_icone {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+  }
+  .themeBoutonSecondaire.ieBouton.Texte10.OmbreFocus.NoWrap {
+    background-color: var(--6gray);
+  }
+  tr[valign='top'] > td {
+    height: 100%;
+    min-height: 16px;
+    background-color: var(--2gray) !important;
+    color: var(--lightgray) !important;
+  }
+  .pu_zone .WhiteSpaceNormal {
+    background-color: var(--2gray) !important;
+    background: var(--2gray) !important;
+    border: none;
+    padding: none !important;
+  }
+  .InterfaceParametresUtilisateur .pu_zone {
+    display: flex !important;
+    background-color: var(--2gray) !important;
+    max-width: 1000px !important;
+    padding: 1.6rem 0.8rem !important;
+    border-radius: 1rem !important;
+  }
+
+  .ie-chips:not(.disabled).avec-event{
+    color: white !important;
+    background: var(--3gray) !important;
+    background-color: var(--3gray) !important;
+  }
+  .EspaceHaut.EspaceBas > .Espace {
+    background-color: var(--5blue) !important;
+    background: var(--5blue) !important;
+    border-radius: 1rem;
+  }
+
+  .ecrans .multi {
+    background-color: var(--1gray) !important;
+    background: var(--1gray) !important;
+  }
+
+  aside {
+    background-color: var(--1gray) !important;
+    background: var(--1gray) !important;
+  }
+  
+  .ilm_droite {
+    background-color: var(--1gray) !important;
+    background: var(--1gray) !important;
+  }
+
+  .message-vide {
+    background-color: #172541 !important;
+    background: #172541 !important;
+  }
+
+  .ilm_etiqu_disc {
+    background-color: var(--2gray) !important;
+    background: var(--2gray) !important;
+  }
+
+  .liste_zone {
+    background-color: var(--abyss) !important;
+    background: var(--5blue) !important;
+  }
+
+  .liste_btnentete {
+    background-color: var(--5blue) !important;
+    background: var(--5blue) !important;
+  }
+
+  .InterfaceListeMessagerie {
+    background-color: var(--1gray) !important;
+    background: var(--1gray)  !important;
+  }
+
+  .icon .icon_time .total {
+    background: var(--2gray) !important;
+    background-color: var(--2gray) !important;
+  }
+  .FlatListeEvenementsVS .noHover.selected .celluleEvenementVS:not(.total) {
+    background-color: var(--3gray) !important;
+  }
+
+  .FlatListeEvenementsVS .noHover .celluleEvenementVS:not(.total):hover {
+    background-color: var(--3gray) !important;
+  }
+  .FlatListeEvenementsVS .noHover .celluleEvenementVS:not(.total):active {
+    background-color: var(--3gray) !important;
+  }
+  .FlatListeEvenementsVS .noHover .celluleEvenementVS:not(.total):hover {
+    background-color: var(--3gray) !important;
+  }
+
+  .AlignementHaut .WhiteSpaceNormal {
+    border-radius: 0.5px
+  }
+
+  .ObjetListe.skin_flatDesign .fd_ligne .liste_contenu_ligne {
+    background-color: none !important;
+  }
+
+  .ifc_RecapVS .ObjetFenetre_Edition_Contenu .sansBascule .espace-recapVS {
+    background-color: var(--1gray)  !important;
+    background: var(--1gray)  !important;
+  }
+
+  .FlatListeEvenementsVS {
+    background-color: var(--1gray)  !important;
+    background: var(--1gray)  !important;
+  }
+
+  .ifc_RecapVS .ifc_RecapVS_EcranListe.sansBascule .ifc_RecapVS_EcranListe_Content {
+    background-color: var(--1gray)  !important;
+    background: var(--1gray)  !important;
+  }
+
+  .ilm_gauche_entete {
+    background-color: var(--3gray) !important;
+    background: var(--3gray) !important;
+  }
+
+  .EspaceIndex .CalendrierPeriode {
+    background-color: var(--1gray) !important;
+  }
+
+  .CalendrierPeriode .conteneur-ObjetCalendrier .conteneur-mois .nom-mois {
+    background-color: var(--8gray) !important;
+    color: white !important;
+  }
+
+  .CalendrierPeriode .conteneur-ObjetCalendrier .conteneur-mois table {
+    background-color: var(--5gray) !important;
+    color: white !important;
+  }
+
+  .jiehint:not(.calendrier-jour) {
+    background-color: var(--7gray) !important;
+  }
+
+ .date-joursFeries, .date-joursNonOuvres {
+    background-color: var(--2gray) !important;
+ }
+
+  .AvecSelectionTexte .OmbreFocus .message {
+    background-color: var(--3gray) !important;
+    background: var(--3gray) !important;
+    color: black
+  }
+
+  .AvecSelectionTexte .OmbreFocus .message .emetteur {
+    background-color: var(--3gray) !important;
+    background: var(--3gray) !important;
+    color: black;
+  }
+
+  .ObjetListe .liste_celluleGrid {
+    background-color: #172541 !important;
+    color: white !important;
+  }
+
+  .EspaceIndex input:not([type]).style-input, .EspaceIndex input[type="text"].style-input, .EspaceIndex input[type="email"].style-input, .EspaceIndex input[type="password"].style-input, .as-input:not(.as-password) {
+    background-color: var(--2blue) !important;
+    color: white;
+  }
+
+  .AlignementHaut .WhiteSpaceNormal {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  td[style="border: #C5C5C5 1px solid;background:#F8F8F8;color:#0A9B6A;text-align:center;font-weight:bold;padding:0;width:6%;"] {
+    background: var(--2gray) !important;
+  }
+  td[style="border: 1px solid rgb(197, 197, 197); color: black; text-align: center; font-weight: bold; padding: 0px; width: 2%; background-color: white;"] {
+    background: #222 !important;
+  }
+  td[style="border: 1px solid rgb(197, 197, 197); color: white; text-align: center; font-weight: bold; padding: 0px; width: 2%; background: rgb(246, 246, 246);"] {
+    background: #303030 !important;
+  }
+  td[style="border: 1px solid rgb(197, 197, 197); color: black; text-align: center; font-weight: bold; padding: 0px; width: 2%; background: rgb(209, 233, 218);"] {
+    background: #304030 !important;
+  }
+  .Texte10 tbody tr td.AlignementMilieu.Gras.Texte14[style=" background-color:#F6F6F6; color:#F6F6F6;"] {
+    background: #303030 !important;
+  }
+  .Texte10 tbody tr td.AlignementMilieu.Gras.Texte14[style=" background-color:#D1E9DA; color:#D1E9DA;"] {
+    background: #304030 !important;
+  }
+  label {
+    color: var(--lightgray) !important;
+  }
+  div.EspaceGauche {
+    color: var(--lightgray);
+  }
+  .AvecMain::after {
+    background-color: #000;
+  }
+  div.objetmenuprincipal_niveau0 > ul > li:hover {
+    background-color: var(--3gray);
+  }
+  div.objetBandeauEntete_secondmenu > div:first-child > ul > li > ul {
+    background-color: var(--2gray);
+  }
+  div.objetBandeauEntete_secondmenu > div:first-child > ul > li > ul > li:hover {
+    background-color: var(--3gray);
+  }
+  .BlocDevoirEvaluation {
+    background-color: var(--6gray);
+  }
+  .deroulant-conteneur-show-hide {
+    background: var(--1blue) ;
+  }
+  .deroulant-conteneur-show-hide .liste-as-options > li .as-li {
+    background: inherit !important;
+    color: var(--lightgray) !important;
+  }
+  .deroulant-conteneur-show-hide .liste-as-options > li .as-li:hover {
+    background: #3498db !important;
+  }
+  td.EspaceGauche.AlignementHaut > div.Gras.DoubleEspace {
+    background-color: #494949 !important;
+    color: #fff;
+  }
+  .Texte10.Gras.AlignementMilieu.GrandEspaceHaut {
+    color: var(--lightgray);
+  }
+  .Espace > table {
+    color: var(--lightgray);
+  }
+  .Texte10.Gras.AlignementMilieu {
+    color: var(--lightgray);
+  }
+  textarea, textarea:disabled {
+    background-color: var(--2gray);
+    color: var(--lightgray);
+  }
+  table.SansMain {
+    background-color: #222;
+  }
+  .Texte10.Gras {
+    color: var(--lightgray);
+  }
+  .DivBloc.BlocPastille.z-depth-1.ArrondisBloc {
+    background-color: var(--2gray);
+  }
+  .EspaceBas .Gras.EspaceGauche.MaClasseBordure {
+    background: none !important;
+    color: var(--lightgray) !important;
+  }
+  .iecb.iecbrbgauche.Gras.NoWrap {
+    color: var(--lightgray);
+  }
+  .AvecSelectionTexte.AvecMain {
+    background-color: #222;
+    color: var(--lightgray);
+  }
+  .ObjetTimeline_BlocCompact {
+    background-color: var(--2gray);
+  }
+  div.Bloc_Contenu.UtilitaireBloc_itemNormal > div > div > div > div.Espace > div {
+    color: var(--lightgray);
+  }
+  .Fenetre_Cadre.Fenetre_Scroll {
+    background-color: var(--2gray) !important;
+  }
+  .BlocPastille {
+    background-color: var(--2gray) !important;
+  }
+  .PourFenetreBloc_Contenu > .Espace {
+    background-color: inherit !important;
+  }
+  .EspaceHaut.EspaceBas > .Espace {
+    background-color: var(--3gray);
+  }
+  .Texte10.Fenetre_Cadre {
+    background-color: var(--3gray);
+  }
+  .Texte10.Fenetre_Cadre > tbody > tr > td {
+    background-color: var(--3gray);
+  }
+  .liste_gridTitre {
+    background: inherit !important;
+  }
+  .Texte10.Fenetre_Cadre > tbody > tr > td > div > div {
+    background-color: var(--3gray);
+  }
+  .Texte10.Fenetre_Cadre > tbody > tr > td > div > div > div > div.InlineBlock {
+    background-color: var(--2gray);
+  }
+  .InlineBlock.AlignementMilieuVertical > .InlineBlock > .InlineBlock {
+    background-color: var(--2gray) !important;
+  }
+  .AvecMain.SouligneSurvol.AlignementMilieuVertical.EspaceDroit {
+    color: var(--lightgray) !important;
+  }
+  .Fenetre_Cadre, .Fenetre_Cadre .NoWrap, .Fenetre_Cadre td {
+    background: var(--2blue) !important;
+  }
+  .Fenetre_Cadre .InlineBlock.AlignementMilieuVertical.PourFenetreBloc_Contenu, .Fenetre_Cadre .InlineBlock.AlignementMilieuVertical.PourFenetreBloc_Contenu div {
+    background: #3f3f3f !important;
+  }
+  .Fenetre_Cadre .InlineBlock.AlignementMilieuVertical.PourFenetreBloc_Contenu div {
+    border: 1px solid #3f3f3f !important;
+  }
+  .Fenetre_Cadre .InlineBlock.AlignementMilieuVertical.PourFenetreBloc_Contenu .PetitEspaceHaut.PetitEspaceBas {
+    background: #3a3a3a !important;
+    border: 1px solid #3a3a3a !important;
+  }
+  .InlineBlock {
+    color: var(--lightgray) !important;
+  }
+  .NePasImprimer.SansSelectionTexte > div:not(.Texte):nth-child(2)[style="clear:both; position:relative; top:100px; border: 2px solid #C5C5C5; color:black; background-color:#F8F8F8;margin-left:auto; margin-right:auto; text-align : center; min-width:290px; max-width:800px; width:50%; padding:10px;"] {
+    background-color: var(--3gray) !important;
+    color: #eee !important;
+  }
+  .Gras {
+    color: #eee;
+  }
+  table.Tableau td.Titre, table.Tableau tr:first-child {
+    background: inherit !important;
+  }
+  div[style="float:right"] {
+    color: #eee;
+  }
+  .jspTrack {
+    background-color: var(--2gray);
+  }
+  .jspVerticalBar .jspDrag {
+    background-color: var(--1gray) ;
+    border-color: #383838;
+  }
+  .jspVerticalBar .jspDrag.jspHover {
+    background-color: #282828;
+  }
+  .jspArrow {
+    background-color: var(--2gray);
+  }
+  .jspArrow:hover {
+    background-color: #383838;
+  }
+  .jspArrow.jspDisabled:hover {
+    background-color: var(--2gray);
+  }
+  select#apparenceselector {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  .EspaceGauche.ZoneDeplacementFenetre.IE_draggable.ui-draggable-handle {
+    color: var(--lightgray);
+  }
+  .VoileOpaque {
+    background-color: black;
+  }
+  .BoutonPageCommune {
+    color: var(--lightgray);
+  }
+  #id_36_connect.InlineBlock.AlignementMilieuVertical {
+    background-color: var(--2gray) !important;
+  }
+  input {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  input#pdpCustomFile {
+    background: none;
+  }
+  div[role="tab"] {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  button.ieBouton.themeBoutonNeutre {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+  }
+  button.ieBouton.themeBoutonNeutre:disabled {
+    background: var(--6gray);
+    color: var(--3gray);
+  }
+  button.ieBouton:disabled i.ieBoutonIcon {
+    color: var(--3gray) !important;
+  }
+  button.ieBouton.themeBoutonNeutre:hover:enabled {
+    background: var(--2gray);
+    color: var(--lightgray);
+  }
+  .traitVertical {
+    border-right: dotted 0.3rem var(--3gray) !important;
+  }
+  .blocTimeline-etiquette.Espace.AlignementMilieu.ie-ellipsis {
+    background-color: var(--3gray) !important;
+  }
+  .blocTimeline-etiquette.Espace.AlignementMilieu.ie-ellipsis span {
+    color: inherit !important;
+  }
+  .jspContainer .jspPane div[style="display:flex;"] div[style="background-color : white;"] {
+    background: none !important;
+  }
+  .jspContainer .jspPane div[style="display:flex;"] div[style="background-color : #F6F6F6;"] {
+    background: #494949 !important;
+  }
+  .MessageInformatif {
+    background: var(--2gray) !important;
+    color: var(--lightgray);
+  }
+  .MessageInformatif td[role="alert"] {
+    color: var(--lightgray) !important;
+  }
+  .LigneRessource .OmbreFocus.PastilleRessource {
+    background: var(--3gray) !important;
+  }
+  .SansMain.InterfaceSelectionRessourceCours > div {
+    background: var(--2gray) !important;
+  }
+  .SansMain.InterfaceSelectionRessourceCours > div > div:not(.ConteneurRessources) {
+    background: var(--1gray)  !important;
+  }
+  .Fenetre_Bordure.ConteneurFiches, .EnteteDecroche > div:nth-child(2) {
+    background: var(--3gray) !important;
+  }
+  .EnteteDecroche > div > svg > polygon {
+    fill: var(--3gray) !important;
+  }
+  #resetline button {
+    background: var(--1gray) ;
+    color: var(--lightgray);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .zone-principale .ie-ellipsis {
+    color: #3273b5;
+  }
+  
+  .ObjetTimeline_classScrollPanel{
+    background: var(--1blue) !important;
+  }
+  .conteneurBandeauGrille {
+    background: var(--1blue) !important;
+  }
+  .DivBloc {
+    background: var(--2gray);
+  }
+
+  .liste_celluleGrid .AvecMain {
+    background-color: #172541 !important;
+  }
+
+  .SansMain .liste_fixed {
+    background-color: var(--2gray) !important;
+  }
+
+  .DivBloc .ArrondisBloc .z-depth-1 .MargeGaucheBloc, .ObjetTimeline_column {
+    background-color: var(--2gray) !important;
+    padding: 0 !important;
+  }
+
+  .listeHeures {
+    background-color: var(--2gray) !important;
+  }
+
+  aside {
+    background-color: var(--2gray) !important;
+  }
+
+  .liste_contenu_cellule_contenu {
+    background-color: none !important;
+  }
+
+  .ibe_image_etab img {
+    border-radius: 8px;
+    border: 0px !important;
+    margin-left: 5px;
+    /* width: 70px; */
+  }
+
+  .moyenne {
+    border: solid 1px var(--3gray);
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .M10 {
+    background-color: #ff6161;
+  }
+
+  .M13 {
+      background-color: #ffd061;
+      color: black;
+  }
+
+  .M16 {
+      background-color: #55c974;
+  }
+
+  .M20 {
+      background-color: #28ad37;
+  }
+
+  .MNAME {
+    margin-top: 5px;
+  }
+
+  ul.utilMess_visu_messages > li {
+    background-color: var(--3gray);
+  }
+
+  .Timeline .ArrondisBloc {
+    background-color: var(--2blue) !important;
+  }
+  
+  .InterfacePageInfoSondage .ecrans.multi {
+    background-color: var(--1gray)  !important;
+  }
+
+  .ObjetCalendrierAnnuel_journonouvre .AlignementHaut {
+    background-color: #000;
+  }
+
+  .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-nested .sub-liste li .as-header:hover, .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-nested .sub-liste li .liste-docs a:hover, .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-groups .sub-liste li .as-header:hover, .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-groups .sub-liste li .liste-docs a:hover, .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-ressources .sub-liste li .as-header:hover, .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-ressources .sub-liste li .liste-docs a:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.notes.theme-cat-resultat .content-container > div[id^="id_"] .liste-clickable > li:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.ressourcepedagogique.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-clickable > li:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.ds.theme-cat-pedagogie .content-container > div[id^="id_"] .liste-clickable > li:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.viescolaire.theme-cat-viescolaire .content-container > div[id^="id_"] .liste-clickable > li:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.agenda.theme-cat-communication .content-container > div[id^="id_"] .liste-clickable > li:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.competences.theme-cat-resultat .content-container > div[id^="id_"] .liste-clickable > li:hover {
+    background-color: var(--3gray);
+  }
+
+  .widget.travailafaire.theme-cat-pedagogie .content-container > div[id^="id_"] .as-cta {
+    color: #341359 !important;
+  }
+
+  .conteneur-CDT .conteneur-liste-filtre .Liste-Matieres {
+    color: white;
+    cursor: pointer;
+  }
+
+  .ifc_RecapVS {
+    background-color: var(--2gray) !important;
+  }
+
+  .ObjetListe .liste_pagination {
+    background-color: var(--2gray) !important;
+  }
+
+  .BorderBox .Texte10 .PetitEspaceGauche .PetitEspaceDroit .overflow-auto {
+    background-color: var(--2gray) !important;
+  }
+
+  .Tableau {
+    background-color: var(--1gray)  !important;
+  }
+
+  .PetitEspaceHaut {
+    background-color: transparent !important;
+  }
+
+  .ObjetListe .liste_btnsDroite > div i.btnImage.btn_icone_deploiement {
+    background-color: var(--2gray) !important;
+  }
+  
+  .conteneur-FicheStage .flex-wrapper .sous-section.conteneur-info a {
+    color: white;
+  }
+
+  input.round-style:not(:disabled):not(.browser-default) {
+    background-color: var(--7gray) !important;
+  }
+
+  .EspaceIndex .lien-communication [href^="tel"] {
+    color: white;
+  }
+
+  .Timeline .blocTimeline-etiquette {
+    background-color: var(--7gray) !important;
+    color: white !important;
+  }
+  .Timeline .blocTimeline-etiquette span {
+    background-color: var(--7gray) !important;
+    color: white !important;
+  }
+
+  .InterfaceSelectionDate .jours td > div > div {
+    background-color: none !important;
+    border-radius: 5px;
+  }
+
+  .widget .content-container::after {
+    color: var(--2blue) !important;
+  }
+
+  .ie-chips.tag-style {
+    background: var(--6blue) !important;
+  }
+
+  .ie-chips.tag-style::after {
+    background: linear-gradient(225deg, none 0%, none 0.4rem, var(--6blue) 0.4rem, var(--6blue) 100%) !important;
+  }
+
+  .objetBandeauEntete_secondmenu .objetBandeauEntete_fullsize .precedenteConnexion {
+    color: var(--lightgray) !important;
+  }
+  
+  .EspaceIndex .switch.colored-label input + span + span, .EspaceIndex .iecb.colored-label input + span + span {
+    color: var(--theme-claire) !important;
+  }
+
+  #id_59_TitreText > span:nth-child(1) {
+    color: #af6900 !important;
+  }
+
+  .ie-titre-couleur, .ie-titre-couleur-lowercase {
+    color: var(--theme-sombre-scalePlus60) !important;
+  }
+
+  .ObjetBandeauEspace .colorFoncee {
+    color: #007c4b !important;
+  }
+
+  .widget.taf .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li, .widget.travailafaire .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li, .widget.travailafaireprimaire .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li, .widget.activite .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li, .widget.evenementsrappel .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li {
+    border-bottom: solid 0.1rem var(--5blue) !important;
+  }
+
+  .widget.taf .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li:last-child, .widget.travailafaire .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li:last-child, .widget.travailafaireprimaire .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li:last-child, .widget.activite .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li:last-child, .widget.evenementsrappel .content-container > div[id^="id_"] .liste-imbriquee > li .sub-liste li:last-child {
+    border: none !important;
+  }
+
+  .widget.ressourcepedagogique.ThemeCat-pedagogie .content-container > div[id^="id_"] li, .widget.viescolaire.ThemeCat-viescolaire .content-container > div[id^="id_"] li,
+  .widget.notes.ThemeCat-resultat .content-container > div[id^="id_"] li, .widget.competences.ThemeCat-resultat .content-container > div[id^="id_"] li,
+  .widget.menudelacantine.ThemeCat-communication .content-container > div[id^="id_"] li, .widget.agenda.ThemeCat-communication .content-container > div[id^="id_"] li,
+  .widget.lienutile.ThemeCat-communication .content-container > div[id^="id_"] li {
+    border-top: solid 0.1rem var(--5blue) !important
+  }
+
+  .widget.ressourcepedagogique.ThemeCat-pedagogie .content-container > div[id^="id_"] li:first-child, .widget.viescolaire.ThemeCat-viescolaire .content-container > div[id^="id_"] li:first-child,
+  .widget.notes.ThemeCat-resultat .content-container > div[id^="id_"] li:first-child, .widget.competences.ThemeCat-resultat .content-container > div[id^="id_"] li:first-child,
+  .widget.menudelacantine.ThemeCat-communication .content-container > div[id^="id_"] li:first-child, .widget.lienutile.ThemeCat-communication .content-container > div[id^="id_"] li:first-child,
+  .widget.agenda.ThemeCat-communication .content-container > div[id^="id_"] li:first-child {
+    border: none !important;
+  }
+
+  .widget header h3.clickable:hover, .widget header h3 > a:hover, .widget header h3 > span.AvecMain:hover {
+    color: #f9a62c !important;
+  }
+
+  .date {
+    color: var(--lightgray);
+  }
+
+  .widget header .cta-conteneur .as-button {
+    background-color: var(--2blue) !important;
+    border: solid 0.1rem var(--lightgray) !important;
+    color: var(--lightgray) !important;
+  }
+  
+  .widget .content-container > div[id^="id_"] .liste-clickable li:hover {
+    background-color: var(--7gray);
+  }
+
+  .widget.travailafaire .content-container > div[id^="id_"] h4, .widget.travailafaireprimaire .content-container > div[id^="id_"] h4, .widget.taf .content-container > div[id^="id_"] h4, .widget.activite .content-container > div[id^="id_"] h4, .widget.actualites .content-container > div[id^="id_"] h4, .widget.tafetactivites .content-container > div[id^="id_"] h4 {
+    background-color: var(--6blue) !important;
+    color: white !important;
+  }
+
+  .widget.travailafaire .content-container > div[id^="id_"] .as-cta.rendu-pn {
+    background-color: var(--theme-sombre-scalePlus10) !important;
+    color: white !important;
+  }
+
+  .widget.travailafaire .content-container > div[id^="id_"] .as-cta.rendu-pn:hover {
+    background-color: var(--theme-sombre-scalePlus20) !important;
+  }
+
+  .ieBouton:not(.bouton-carre):not(.themeTabBar):not(.themeBoutonPrimaire):not(.themeBoutonNeutre):not(.has-dots) {
+    background-color: var(--theme-sombre-scalePlus10) !important;
+    color: white !important;
+    border: none !important;
+  }
+
+  .ieBouton:not(.bouton-carre):not(.themeTabBar):not(.themeBoutonPrimaire):not(.themeBoutonNeutre):not(.has-dots):hover {
+    background-color: var(--theme-sombre-scalePlus20) !important;
+  }
+
+  .widget .as-footer .btn-collapse {
+    background-color: var(--theme-sombre-scalePlus10) !important;
+    color: white !important;
+  }
+
+  .widget .as-footer .btn-collapse:hover {
+    background-color: var(--theme-sombre-scalePlus20) !important;
+  }
+
+  #GInterface\.Instances\[2\]\.Instances\[3\] {
+    background-color: var(--1blue) !important;
+    color: white !important;
+  }
+
+  div.fluid-bloc:nth-child(2) {
+    background-color: var(--1blue) !important;
+    color: white !important;
+  }
+
+  .conteneur-CDT {
+    background-color: var(--1blue) !important;
+  }
+
+  .zone-complementaire {
+    color: white !important;
+    font-weight: bold;
+  }
+
+  .widget .content-container .no-events, .widget .content-container .no-events p, .widget .content-container .salle, .widget .content-container .event-type, .widget .content-container .convocation, .widget .content-container.convocation::before, .ie-sous-titre {
+    color: var(--9lgray) !important;
+  }
+
+  #GInterface\.Instances\[2\] {
+    background-color: var(--3gray) !important;
+  }
+
+  #GInterface\.Instances\[2\]\.Instances\[1\]_Zone_1, .liste_contenu_ligne {
+    background-color: #172541 !important;
+  }
+
+  .zone-filtres {
+    background-color: var(--5gray);
+  }
+
+  .ObjetFenetre_Espace .Fenetre_Titre .cta-conteneur i.btnImage[class*="icon_"].btnImageIcon.as-button {
+    background-color: var(--2blue) !important;
+    border: solid 0.1rem var(--lightgray) !important;
+    color: var(--lightgray) !important;
+  }
+
+  .ie-titre-gros.souligne, .titre-onglet {
+    color: var(--ts) !important;
+  }
+
+  .EspaceIndex .GroupeRadioButton > input:checked + label {
+    background-color: var(--ts) !important;
+  }
+
+  .ie-titre-gros.souligne {
+    border-bottom: solid 0.1rem var(--ts) !important;
+  }
+
+  .ie-chips:not(.disabled).avec-event {
+    background: var(--6blue) !important;
+    background-color: var(--6blue) !important;
+  }
+
+  #GInterface\.Instances\[2\]\.Instances\[5\]\.Instances\[0\]_VisuEleve > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+    background-color: var(--3gray) !important;
+  }
+
+  #GInterface\.Instances\[2\]\.Instances\[5\]\.Instances\[0\]_VisuEleve > div:nth-child(1), #GInterface\.Instances\[2\]\.Instances\[5\]\.Instances\[0\]\.objetVisuEleve_WrapperAffichage_0 > div:nth-child(1) {
+    background-color: var(--7gray) !important;
+  }
+
+  .post {
+    background-color: var(--7gray) !important;
+    color: white !important;
+  }
+
+  .post.auteur {
+    background-color: var(--ts) !important;
+    color: white !important;
+  }
+
+  .liste_rechercheTexte .like-input {
+    background-color: var(--7gray);
+  }
+
+  .NePasImprimer .ThemePronote {
+    background-color: var(--3gray) !important;
+  }
+
+  .Icone_EspaceEtudiant {
+    color: white !important;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%) !important;
+  }
+
+  #id_19 {
+    background-color: var(--7gray) !important;
+  }
+
+  .bloc-connexion-wrapper {
+    background-color: var(--1gray) !important;
+    color: white !important;
+  }
+
+  .Texte10 .Gras, .libelle, .ie-titre-gros, .InterfaceSelectionDate .titre-jours td.ouvre, .InterfaceSelectionDate .jours td.actif, .ie-titre, .widget.travailafaire.theme-cat-pedagogie
+  .content-container > div[id^="id_"] .as-cta:hover, .sous-titre, .visu-post, .ie-texte, h3, h4, .detail-titre, .Texte9, .Texte10, #IE.Identite.collection.g12_Titre, #IE.Identite.collection.g13_Titre,
+  #id_143, .Fenetre_Contenu, #id_166, #GInterface\.Instances\[2\]\.Instances\[1\]_grid_0, .ie-ellipsis, .ieBoutonIcon, .small-bt:hover, .small-bt, #GInterface\.Instances\[2\]\.Instances\[1\], .widget .as-footer .btn-collapse span,
+  .fiche-etablissement, .icon_remove, .zoneConsult_scroll, .titre-info-sondage, .as-li .c_1 .ie-ellipsis .selected, .as-li .c_1 .ie-ellipsis {
+    color: white !important;
+  }
+
+  #id_16 {
+    fill: var(--7gray) !important;
+  }
+
+  #id_19 > div:nth-child(4) {
+    position: relative !important;
+  }
+
+  .date-contain {
+    background-color: var(--8gray) !important;
+    color: white !important;
+  }
+
+  .total-content, .liste-totale-fd.liste-footer {
+    background-color: var(--7gray) !important;
+  }
+
+  .ObjetCalendrier .calendrier-jour {
+    color: black !important;
+  }
+
+  .PastilleRessource {
+    color: var(--8gray) !important;
+  }
+
+  .widget.edt .liste-cours > li.cours-annule, .edtJournalier .liste-cours > li.cours-annule {
+    background-color: transparent !important;
+  }
+
+  .ObjetListe.skin_flatDesign .fd_ligne .zone-complementaire time, .ObjetListe.skin_flatDesign .fd_ligne .zone-complementaire .compteur, .ObjetListe.skin_flatDesign .fd_ligne .zone-complementaire .btn-conteneur {
+    color: var(--9lgray) !important;
+  }
+
+  .real-scroll {
+    background-color: var(--5blue) !important;
+  }
+
+  .EtiquetteCours > div {
+    color: red !important;
+  }
+
+  .InterfacePageMenus .header {
+    background-color: var(--5gray) !important;
+  }
+
+  .ObjetListe .liste_btnsDroite > div {
+    background-color: transparent !important;
+  }
+
+  .like-input:not(:disabled), .round-style ~ div.tox.tox-tinymce:not(:disabled), textarea.round-style:not(:disabled):not(.browser-default), input.round-style:not(:disabled):not(.browser-default) {
+    background-color: unset !important;
+    color: white !important;
+  }
+
+  i.btnImage:not([class*="Image_"]).btnImageDisable.avecFond, i.btnImage:not([class*="Image_"]).btnImageDisable.bt-activable {
+    background-color: unset !important;
+    border: none;
+    color: var(--lightgray) !important;
+    
+  }
+
+  .footer-wrapper .footer-toggler {
+    background: var(--5blue) !important;
+  }
+
+  .ObjetMenuContexutel ul li.active-color:hover {
+    background-color: #314163 !important;
+  }
+
+  .ObjetMenuContexutel ul li.active-color {
+    background-color: #25314b !important;
+  }
+
+  .ObjetMenuContexutel ul li.separateur {
+    border-bottom: none !important;
+  }
+
+  .ObjetListe.skin_flatDesign h5.fd-style-intertitre {
+    color: white !important;
+  }
+
+  .ObjetCompte .compte-contain .item-conteneur .inner-item-contain, .ObjetCompte .compte-contain .item-conteneur .valeur-contain .notification-bloc, .ObjetCompte .compte-contain .item-conteneur-inner, .ObjetCompte .compte-contain .item-conteneur {
+    border-bottom: var(--7blue) !important;
+  }
+
+  #GInterface\.Instances\[2\] {
+    background-color: var(--5blue) !important;
+  }
+
+  .InterfaceDocuments .ctn-gauche.multi {
+    background-color: var(--5blue) !important;
+  }
+
+  #conteneur-page > div:nth-child(1) > div:nth-child(1), #conteneur-page > div:nth-child(1) > div:nth-child(2), #conteneur-page > div:nth-child(1) > div:nth-child(3), #conteneur-page > div:nth-child(1) > div:nth-child(4), #conteneur-page > div:nth-child(1) > div:nth-child(5) {
+    background-color: var(--1blue) !important;
+  }
+
+  #conteneur-page > div:nth-child(1) > div:nth-child(1) > div:nth-child(2), #conteneur-page > div:nth-child(1) > div:nth-child(2) > div:nth-child(2), #conteneur-page > div:nth-child(1) > div:nth-child(3) > div:nth-child(2), #conteneur-page > div:nth-child(1) > div:nth-child(4) > div:nth-child(2), #conteneur-page > div:nth-child(1) > div:nth-child(5) > div:nth-child(2) {
+    border: none !important;
+  }
+
+  #conteneur-page > div:nth-child(1) > div:nth-child(1) > div:nth-child(1), #conteneur-page > div:nth-child(1) > div:nth-child(2) > div:nth-child(1), #conteneur-page > div:nth-child(1) > div:nth-child(3) > div:nth-child(1), #conteneur-page > div:nth-child(1) > div:nth-child(4) > div:nth-child(1), #conteneur-page > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) {
+    border: none !important;
+  }
+
+  .InterfaceSelectionDate .jours td.current-date > div > div > div > div {
+    background-color: #3399ff !important;
+  }
+
+  .EspaceIndex .InterfaceForumPedagogique > .liste-matieres {
+    background-color: #172541 !important;
+  }
+
+  #GInterface\.Instances\[2\]\.Instances\[2\] {
+    background-color: #283755 !important;
+  }
+
+  .ie-titre-petit {
+    color: var(--lightgray) !important;
+  }
+
+  .as-input.ocb_cont > .ocb_bouton {
+    color: var(--lightgray) !important;
+  }
+
+  #IEHtml\.collectionIdentite\[1\]_1 {
+    white-space: initial !important;
+  }
+
+  .theme-neutre_bg_moyen1 {
+    background-color: var(--5blue);
+  }
+
+#GInterface\.Instances\[2\]\.Instances\[3\], * {
+  scrollbar-color: var(--2blue) transparent !important;
+}
+
+.menu-principal_niveau2 .item-menu_niveau2:hover {
+  background-color: var(--5blue) !important;
+}
+
+.PetitEspaceBas {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[2\]\.Instances\[2\] > div:nth-child(1) > div:nth-child(1) {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+#id_168_consult > div:nth-child(1) > span:nth-child(2) {
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+.ie-titre-petit {
+  text-decoration: underline !important;
+}
+
+.m-top {
+  color: white !important;
+}
+
+#id_183_consult > div:nth-child(2) > span:nth-child(1) {
+  color: white !important;
+}
+
+#id_183_consult > div:nth-child(1) > span:nth-child(1) {
+  color: white !important;
+}
+
+.SuiviResultatsCompetences .PageDonnees .PanelDonneesEleveListe .BandeauTitreTypeResultats {
+  color: white !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[0\]_Contenu_2 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) {
+  color: white !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[1\]_Contenu_2 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) {
+  color: white !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[4\]\.Instances\[2\] > div:nth-child(1) > div:nth-child(1) {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+span.AlignementMilieuVertical:nth-child(3) {
+  color: white !important;
+}
+
+span.AlignementMilieuVertical:nth-child(6) {
+  color: white !important;
+}
+
+span.AlignementMilieuVertical:nth-child(9) {
+  color: white !important;
+}
+
+span.AlignementMilieuVertical:nth-child(12) {
+  color: white !important;
+}
+
+span.AlignementMilieuVertical:nth-child(14) {
+  color: white !important;
+}
+
+span.AlignementMilieuVertical:nth-child(16) {
+  color: white !important;
+}
+
+span.AlignementMilieuVertical:nth-child(18) {
+  color: white !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[4\]\.Instances\[0\] {
+  color:white !important;
+}
+
+#id_166_consult > div:nth-child(1) > span:nth-child(1) {
+  color: white !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[0\]CelluleTotal_0_-1 {
+  background-color: var(--5blue) !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[0\]CelluleTotal_1_-1 {
+  background-color: var(--5blue) !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[0\]CelluleTotal_2_-1 {
+  background-color: var(--5blue) !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[0\]CelluleTotal_3_-1 {
+  background-color: var(--5blue) !important;
+}
+
+#GInterface\.Instances\[2\]\.Instances\[0\]CelluleTotal_4_-1 {
+  background-color: var(--5blue) !important;
+}
+
+.ObjetListe .liste_gridTitre {
+  color: white !important;
+}
+
+.ObjetListe .liste_titre_separateur {
+  background-color: white !important;
+  height: 1px;
+}
+
+.textareamax {
+  background-color: var(--2blue) !important;
+}
+
+.textarea, textarea:disabled {
+  background-color: var(--5blue) !important;
+}
+
+.semi-bold.taille-m.text-center.p-y-xl.m-bottom-l {
+  color: white !important;
+}
