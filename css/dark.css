@@ -10,6 +10,17 @@
   --8gray: #3E4757;
   --9lgray: #6e7e99;
   --ts: #00985a !important;
+  --notebg-y: rgba(247, 165, 49, 0.3);
+  --notebg-lg: rgba(139, 231, 139, 0.3);
+  --notebg-dg: rgba(9, 145, 93, 0.3);
+  --notebg-gray: rgba(128, 128, 128, 0.3);
+  --notebg-red: rgba(247, 0, 0, 0.3);
+  --noteborder-y: 1px solid #f7a531;
+  --noteborder-lg: 1px solid #8be78b;
+  --noteborder-dg: 1px solid rgb(9, 145, 93);
+  --noteborder-gray: 1px solid gray;
+  --noteborder-red: 1px solid #f70000;
+  --notetext: white;
 }
 
 a {
@@ -719,23 +730,6 @@ html, body {
     padding: 4px;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-
-  .M10 {
-    background-color: #ff6161;
-  }
-
-  .M13 {
-      background-color: #ffd061;
-      color: black;
-  }
-
-  .M16 {
-      background-color: #55c974;
-  }
-
-  .M20 {
-      background-color: #28ad37;
   }
 
   .MNAME {

@@ -1,3 +1,17 @@
+:root {
+    --notebg-y: rgba(247, 165, 49, 0.3);
+    --notebg-lg: rgba(139, 231, 139, 0.3);
+    --notebg-dg: rgba(9, 145, 93, 0.3);
+    --notebg-gray: rgba(128, 128, 128, 0.3);
+    --notebg-red: rgba(247, 0, 0, 0.3);
+    --noteborder-y: 1px solid #f7a531;
+    --noteborder-lg: 1px solid #8be78b;
+    --noteborder-dg: 1px solid rgb(9, 145, 93);
+    --noteborder-gray: 1px solid gray;
+    --noteborder-red: 1px solid #f70000;
+    --notetext: black;
+}
+
 #theme-switcher {
     text-decoration: none;
     color: #8a8a8a;
