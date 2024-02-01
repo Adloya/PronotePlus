@@ -158,9 +158,9 @@ setTimeout(() => {
             if (note.style.borderRadius !== "5px") {
               // Checking if it is already patched
               if (note.innerText.includes("/")) {
-                const noteDonnee = parseFloat(note.innerText.split("/")[0], 10);
+                const noteDonnee = parseFloat(note.innerText.replace(",", ".").split("/")[0], 10);
                 const bareme = parseFloat(note.innerText.split("/")[1], 10);
-                const convertedNote = (noteDonnee / bareme) * 20;
+                const convertedNote = parseFloat((noteDonnee / bareme) * 20);
                 note.style.borderRadius = "5px";
                 note.style.fontSize = "12px";
   
