@@ -48,9 +48,8 @@ Les contributions sont essentielles à la vie des logiciels libres de droit, des
 
 Distributed under the Hippocratic License. See [LICENSE](https://github.com/Adloya/PronotePlus/blob/main/LICENSE.md) for more information.
 
-## Auteurs
+## Auteur
 
-* **Adloya** - [Adloya](https://github.com/Adloya/) - *Developer*
-* **MalolamGo** - [MalolamGo](https://github.com/Malolamgo/) - *Developer*
+* **Adloya** - [Adloya](https://github.com/Adloya/) - *Built Pronote+*
 
 #### Pronote+ n'est pas opéré, soutenu ou affilié à Index Education

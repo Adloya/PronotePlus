@@ -11,6 +11,8 @@ setTimeout(() => {
   pglink.rel = "stylesheet";
   pglink.id = "pagetheme-link";
 
+  localStorage.setItem("pplus-current-version", "0.2.4")
+
   document.getElementsByTagName("head")[0].appendChild(link);
 
   let link_rel = document.getElementById("theme-link");
@@ -272,6 +274,8 @@ setTimeout(() => {
                             -👨‍💻Développé et maintenu par <strong><a href="https://github.com/Adloya" target="_BLANK">Adloya</a> </strong> et <strong><a href="https://github.com/Malolamgo" target="_BLANK">Malolam21</a> </strong>
                             <br>
                             - 🖇 Liens : <a href="https://github.com/Adloya/PronotePlus">Github</a> | <a href="https://addons.mozilla.org/fr/firefox/addon/pronoteplus/">Firefox page</a>
+                            <br>
+                            - ℹ️ Version ${localStorage.getItem("pplus-current-version")}
                         </span>
                         <br>
                     </div>
