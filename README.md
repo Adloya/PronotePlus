@@ -20,7 +20,7 @@ Améliorez Pronote en utilisant l'extension Pronote+ !
 
 Pronote+ rajoute :
 
- - Un thème sombre
+ - Un thème sombre ou "l'abysse"
  - La colorimétrie des notes
  - Des informations supplémentaires
  - Et bien + encore !
@@ -51,5 +51,7 @@ Distributed under the Hippocratic License. See [LICENSE](https://github.com/Adlo
 ## Auteur
 
 * **Adloya** - [Adloya](https://github.com/Adloya/) - *Built Pronote+*
+* **Magical_Girls** - [Magical_Girls](https://github.com/Malolamgo/) - *Helped Pronote+*
+
 
 #### Pronote+ n'est pas opéré, soutenu ou affilié à Index Education
