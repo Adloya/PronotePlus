@@ -3,11 +3,7 @@
 }
 
 .fr-header__body, .fr-footer {
-    background-color: #2b2a33;
-    color: white !important;
-}
-
-.fr-header__service, .fr-logo, .no-before, .fr-logo, .fr-header__service-tagline, .fr-header__service-title {
+    background-color: #1e1e1e;
     color: white !important;
 }
 
@@ -21,6 +17,7 @@
 
 #theme-switcher {
     bottom: 0;
+    right: 0;
     position: absolute;
     background-color: var(--2gray);
     border-radius: 5px;
@@ -31,52 +28,40 @@
     color: white;
 }
 
-.fr-footer__content-link {
-    color: white !important;
-}
-
 .fr-footer__content-item a[target="_blank"]::after {
     color: rgb(148, 148, 148) !important;
 }
 
 .fr-container .height-auto {
-    background-color: #42414d;
+    background-color: #161616;
 }
 
 .fr-container#contenu {
-    background-color: #42414d;
+    background-color: #161616;
 }
 
 body {
-    background-color: #42414d;
-}
-
-h1, h2, h3, h4, h5, h6, label {
-    color: white !important;
-}
-
-p, li {
-    color: white !important;
+    background-color: #161616;
 }
 
 .sidebar, .choixProfil__btn {
-    background-color: #1c1b22;
+    background-color: #1e1e1e;
 }
 
 .choixProfil__btn:hover {
     background-color: #2b2a33;
 }
 
-.fr-header__logo .fr-logo::after {
+.fr-header__logo .fr-logo::after, #labelle_identifiant, #labelle_mdp, .fr-label .label_champ_obligatoire, p, li, h1, h2, h3, h4, h5, h6, label, .fr-footer__content-link, .fr-header__service, .fr-logo, .no-before, .fr-logo, .fr-header__service-tagline, .fr-header__service-title {
     color: white !important;
 }
 
 .fr-callout .error, #texteErreur {
-    background-color: #2b2a33;
+    background-color: #343434;
 }
 
 .fr-card__body {
-    background-color: #1c1b22;
+    background-color: #1e1e1e;
 }
 
 .fr-input {
@@ -84,11 +69,11 @@ p, li {
 }
 
 .fr-link {
-    color: #2222ca !important;
+    color: #8585f6 !important;
 }
 
 .bf500 {
-    color: #2222ca !important;
+    color: #8585f6 !important;
 }
 
 .showPwd {
@@ -98,4 +83,31 @@ p, li {
 input {
     background-color: #2b2a33 !important;
     color: white !important;
+}
+
+.fr-callout {
+    background-color: #343434 !important;
+}
+
+.fr-btn {
+    background-color: #8585f6 !important;
+    color: #000091 !important;
+}
+
+.fr-btn:hover {
+    background-color: #b1b1f9 !important;
+}
+
+.fr-footer {
+    border-top: 2px solid #8585f6 !important;
+    background-color: #1e1e1e !important;
+    border-bottom: 1px solid #353535 !important;
+}
+
+.fr-footer__bottom {
+    border-top: 1px solid #353535 !important;
+}
+
+.fr-footer__bottom-link, #copyright {
+    color: #929292 !important;
 }

@@ -14,41 +14,12 @@ setTimeout(() => {
       // Light Theme
       console.log("light");
       localStorage.setItem("plus-theme", "light");
-      try {
-        document.getElementById("logo-ministere").src = browser.runtime.getURL(
-          "assets/img/minist.svg"
-        );
-        document.getElementsByClassName(
-          "titreCompte__icone--eleve"
-        )[0].firstElementChild.src = "/idp-static/img/icone-eleve.svg";
-      } catch (e) {
-        document.getElementsByClassName(
-          "titreCompte__icone--rp"
-        )[0].firstElementChild.src = "/idp-static/img/icone-rp.svg";
-      }
-      link.href = browser.runtime.getURL("css/pubpriv/light.css");
+      link.href = browser.runtime.getURL("css/newelyco/light.css");
     } else if (theme === "dark") {
       // Dark Theme
       console.log("dark");
       localStorage.setItem("plus-theme", "dark");
-      try {
-        document.getElementById("logo-ministere").src = browser.runtime.getURL(
-          "assets/img/ministd.svg"
-        );
-        document.getElementsByClassName(
-          "titreCompte__icone--eleve"
-        )[0].firstElementChild.src = browser.runtime.getURL(
-          "assets/img/icone-eleved.svg"
-        );
-      } catch (e) {
-        document.getElementsByClassName(
-          "titreCompte__icone--rp"
-        )[0].firstElementChild.src = browser.runtime.getURL(
-          "assets/img/icone-rpd.svg"
-        );
-      }
-
-      link.href = browser.runtime.getURL("css/pubpriv/dark.css");
+      link.href = browser.runtime.getURL("css/newelyco/dark.css");
     }
   }
 
@@ -72,11 +43,18 @@ setTimeout(() => {
 
   // Theme switcher
   let themeSwitcher = document.createElement("a");
+  let tS_icon = document.createElement("div");
+  let icnWrapper = document.createElement("div");
+  icnWrapper.className = "icone-info-wrapper";
+  tS_icon.className = "icone-info";
+  icnWrapper.innerHTML = "<i class='fa-regular fa-lightbulb'></i>";
+  tS_icon.appendChild(icnWrapper);
   themeSwitcher.id = "theme-switcher";
   themeSwitcher.href = "#";
   themeSwitcher.title = "Changer de thème";
-  themeSwitcher.classList = "fr-btn fr-mb-1w";
-  themeSwitcher.innerHTML = "Changer de thème (Educonnect)";
+  themeSwitcher.className = "boutton";
+  themeSwitcher.innerHTML =
+    "<span style='margin:auto;'>Changer de thème (Elyco)</span>";
   themeSwitcher.addEventListener("click", function (e) {
     e.preventDefault();
     if (localStorage.getItem("plus-theme") === "light") {
@@ -88,5 +66,6 @@ setTimeout(() => {
     }
   });
 
-  document.body.appendChild(themeSwitcher);
+  document.getElementsByTagName("footer")[0].appendChild(themeSwitcher);
+  themeSwitcher.appendChild(tS_icon);
 }, 50);

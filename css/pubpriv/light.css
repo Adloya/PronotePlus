@@ -4,6 +4,7 @@
 
 #theme-switcher {
     bottom: 0;
+    right: 0;
     position: absolute;
     background-color: rgb(172, 172, 172);
     border-radius: 5px;

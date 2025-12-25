@@ -1,0 +1,51 @@
+:root {
+  --1gray: #1B1D24;
+  --2gray: #21242D;
+  --3gray: #232831;
+  --ardoise-graphic-secondary-inverse: #b9bfcb;
+}
+
+.flex.main, footer {
+    background-color: var(--1gray) !important;
+}
+
+#theme-switcher {
+    margin-left: 10px !important;
+}
+
+footer .boutton {
+    background-color: #8585f6 !important;
+    color: var(--1gray) !important;
+
+}
+
+footer .boutton:hover {
+    background-color: #c6c6fb !important;
+    color: var(--1gray) !important;
+}
+
+.flex.main * {
+    color: white;
+}
+
+.card {
+  --bs-card-bg: var(--1gray) !important;
+}
+
+.card-body {
+    background-color: var(--2gray) !important;
+}
+
+.card-button:hover {
+    background-color: var(--3gray) !important;
+}
+
+.boutton {
+    background-color: var(--2gray) !important;
+    border: none !important;
+}
+
+.boutton .icone-info {
+    background-color: #6c6ccf !important;
+    color: var(--1gray) !important;
+}

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pronote+",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Améliorez Pronote avec une multitude de fonctionnalités supplémentaires !\n N'est pas affilié à Index Education.\n Maintenu par Adloya et Malolam",
   "author": "Adloya",
   "content_scripts": [
@@ -28,6 +28,10 @@
       {
         "matches": ["https://idp-itslfr-prod.itslfr-aws.com/cas-elyco/login?*"],
         "js": ["Content_pglogin_agp.js"]
+      },
+      {
+        "matches": ["https://ent.e-lyco.fr/wayf/Ctrl?*"],
+        "js": ["Content_newelyco.js"]
       }
   ],
   
@@ -47,7 +51,13 @@
     "css/agp/light.css",
     "css/cas/dark.css",
     "css/cas/light.css",
-    "css/pages/homepage.css"
+    "css/pages/homepage.css",
+    "css/newelyco/dark.css",
+    "css/newelyco/light.css",
+    "assets/img/minist.svg",
+    "assets/img/ministd.svg",
+    "assets/img/icone-eleved.svg",
+    "assets/img/icone-rpd.svg"
   ],
   "permissions": ["storage", "tabs", "activeTab"]
 }
